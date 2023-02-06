@@ -1,0 +1,1074 @@
+\hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2}{}\doxysection{Libraries and dependencies/5\+D\+T\+Data\+Glove\+Ultra\+\_\+\+S\+D\+K\+\_\+\+Linux\+\_\+32and64bit\+\_\+v2.32\+\_\+25\+March2011/fd\+Glove/install/32bit/fglove.h File Reference}
+\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2}\index{Libraries and dependencies/5DTDataGloveUltra\_SDK\_Linux\_32and64bit\_v2.32\_25March2011/fdGlove/install/32bit/fglove.h@{Libraries and dependencies/5DTDataGloveUltra\_SDK\_Linux\_32and64bit\_v2.32\_25March2011/fdGlove/install/32bit/fglove.h}}
+{\ttfamily \#include $<$termios.\+h$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+Include dependency graph for fglove.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_e3a9ca352520b06b0e9caa3ceda7804b}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structfd_glove}{fd\+Glove}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_abb452686968e48b67397da5f97445f5b}{bool}}~int
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a65e9886d74aaee76545e83dd09011727}{false}}~(0)
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}~(!\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a65e9886d74aaee76545e83dd09011727}{false}})
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}}
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a085f5f68a0ee4ab24d9f3954a78e8063}{L\+P\+V\+O\+ID}}~void$\ast$
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aff55fe551a9992a54ec54621c524d0a4}{S\+O\+C\+K\+ET}}~unsigned int
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ab521aa5010fb1afb801a899a55569e03}{H\+A\+N\+D\+LE}}~void$\ast$
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a77598093df8bf08e1aac9ae486abf25e}{U\+S\+E\+R\+\_\+\+D\+E\+B\+UG}}~0
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aa270f48e350ff81b1e62f2c73c248ef4}{D\+E\+V\+\_\+\+D\+E\+B\+UG}}~1
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ac2d33ccaf63f5d5b66552b95426c0137}{D\+E\+B\+U\+G\+\_\+\+L\+E\+V\+EL}}~\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a77598093df8bf08e1aac9ae486abf25e}{U\+S\+E\+R\+\_\+\+D\+E\+B\+UG}}
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a26aa0f2c80ad1f685199bbdef12a0336}{V\+E\+N\+D\+O\+R\+\_\+\+I\+D\+\_\+5\+DT}}~0x5d70
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a9c2a7aa5dee57f3edfeb82a23af4ddab}{D\+G14\+U\+\_\+R}}~0x00
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a4bb49f06669a5782e811e5b524d069cd}{D\+G14\+U\+\_\+L}}~0x01
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a539f0205da3b373a26bcfedfb58a9cdb}{D\+G14\+U\+\_\+\+RW}}~0x02
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a23e77918c7ef6f8ca9f017e110156276}{D\+G14\+U\+\_\+\+LW}}~0x03
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ac260d8cfddda6acc5881ba2346b812d9}{D\+G14\+U\+\_\+\+R\+W\+\_\+\+S\+L\+A\+VE}}~0x06
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aacabb62face18bf77148488f65849a17}{D\+G14\+U\+\_\+\+L\+W\+\_\+\+S\+L\+A\+VE}}~0x07
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3f3733f839878f6cf6c0c24e456f3168}{D\+G5\+U\+\_\+R}}~0x10
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a7578d9d9727a991173c2b1afbebd2438}{D\+G5\+U\+\_\+L}}~0x11
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aabedd3794eca530309c351d68f06bc19}{D\+G5\+U\+\_\+\+RW}}~0x12
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a40859c7ebf0ddbd0f3c9f3e86880c7bf}{D\+G5\+U\+\_\+\+LW}}~0x13
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_add5f35b161d7794f12d94698eb53dd9a}{D\+G5\+U\+\_\+\+R\+W\+\_\+\+S\+L\+A\+VE}}~0x16
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a07f407e3194fda5e0b7fcd4e8fd78bec}{D\+G5\+U\+\_\+\+L\+W\+\_\+\+S\+L\+A\+VE}}~0x17
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ac2f02c37d02b41aa8036f591f77dbe3d}{D\+G14\+U\+\_\+\+I\+N\+FO}}~0x80
+\item 
+\#define \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a69408b182829e24010f51543490ec523}{M\+A\+S\+K\+\_\+\+W\+I\+R\+E\+L\+E\+SS}}~0x02
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cc}{Efd\+Glove\+Hand}} \{ \newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca7666ec76695521fbd0bc3d5583ad038b}{F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+L\+E\+FT}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca9bdb1a19650fd9a566076c75761d9d82}{F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+R\+I\+G\+HT}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a6af8b4fc817a9f21391a3b13783dc5cca7666ec76695521fbd0bc3d5583ad038b}{F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+L\+E\+FT}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a6af8b4fc817a9f21391a3b13783dc5cca9bdb1a19650fd9a566076c75761d9d82}{F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+R\+I\+G\+HT}}, 
+\newline
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a6af8b4fc817a9f21391a3b13783dc5cca7666ec76695521fbd0bc3d5583ad038b}{F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+L\+E\+FT}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a6af8b4fc817a9f21391a3b13783dc5cca9bdb1a19650fd9a566076c75761d9d82}{F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+R\+I\+G\+HT}}
+ \}
+\item 
+enum \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61e}{Efd\+Glove\+Types}} \{ \newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea8d84824142f6417052c9237da8f768bc}{F\+D\+\_\+\+G\+L\+O\+V\+E\+N\+O\+NE}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa2350ed9678f0c6661ffd919012d3e33}{F\+D\+\_\+\+G\+L\+O\+V\+E5U}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea96f13c765ccc7c3a8e24944b1fe39aea}{F\+D\+\_\+\+G\+L\+O\+V\+E5\+UW}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea556eff214235b2c9e0b6f67cb1c1f7b5}{F\+D\+\_\+\+G\+L\+O\+V\+E5\+U\+\_\+\+U\+SB}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaceadbeab61116187bdfdb0c958432e3e}{F\+D\+\_\+\+G\+L\+O\+V\+E7}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eadff8a60545f2cdf432eea565245ccf8d}{F\+D\+\_\+\+G\+L\+O\+V\+E7W}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ead61745a2efb0ec56247c87ab485d9bf1}{F\+D\+\_\+\+G\+L\+O\+V\+E16}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eae50e46e3653d2d2d7cb5f3c4eb5f6590}{F\+D\+\_\+\+G\+L\+O\+V\+E16W}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa3a04ff8f3b04b591fe7541a8208cb14}{F\+D\+\_\+\+G\+L\+O\+V\+E14U}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eafaa1bca87cb1d664ff8509ccfb3169d7}{F\+D\+\_\+\+G\+L\+O\+V\+E14\+UW}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eab62472afd7e7ae351c1e819975569060}{F\+D\+\_\+\+G\+L\+O\+V\+E14\+U\+\_\+\+U\+SB}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61ea8d84824142f6417052c9237da8f768bc}{F\+D\+\_\+\+G\+L\+O\+V\+E\+N\+O\+NE}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61eaa2350ed9678f0c6661ffd919012d3e33}{F\+D\+\_\+\+G\+L\+O\+V\+E5U}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61ea96f13c765ccc7c3a8e24944b1fe39aea}{F\+D\+\_\+\+G\+L\+O\+V\+E5\+UW}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61ea556eff214235b2c9e0b6f67cb1c1f7b5}{F\+D\+\_\+\+G\+L\+O\+V\+E5\+U\+\_\+\+U\+SB}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61eaceadbeab61116187bdfdb0c958432e3e}{F\+D\+\_\+\+G\+L\+O\+V\+E7}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61eadff8a60545f2cdf432eea565245ccf8d}{F\+D\+\_\+\+G\+L\+O\+V\+E7W}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61ead61745a2efb0ec56247c87ab485d9bf1}{F\+D\+\_\+\+G\+L\+O\+V\+E16}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61eae50e46e3653d2d2d7cb5f3c4eb5f6590}{F\+D\+\_\+\+G\+L\+O\+V\+E16W}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61eaa3a04ff8f3b04b591fe7541a8208cb14}{F\+D\+\_\+\+G\+L\+O\+V\+E14U}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61eafaa1bca87cb1d664ff8509ccfb3169d7}{F\+D\+\_\+\+G\+L\+O\+V\+E14\+UW}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a3c2680970df8389f3845144ad797b61eab62472afd7e7ae351c1e819975569060}{F\+D\+\_\+\+G\+L\+O\+V\+E14\+U\+\_\+\+U\+SB}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61ea8d84824142f6417052c9237da8f768bc}{F\+D\+\_\+\+G\+L\+O\+V\+E\+N\+O\+NE}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61eaa2350ed9678f0c6661ffd919012d3e33}{F\+D\+\_\+\+G\+L\+O\+V\+E5U}}, 
+\newline
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61ea96f13c765ccc7c3a8e24944b1fe39aea}{F\+D\+\_\+\+G\+L\+O\+V\+E5\+UW}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61ea556eff214235b2c9e0b6f67cb1c1f7b5}{F\+D\+\_\+\+G\+L\+O\+V\+E5\+U\+\_\+\+U\+SB}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61eaceadbeab61116187bdfdb0c958432e3e}{F\+D\+\_\+\+G\+L\+O\+V\+E7}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61eadff8a60545f2cdf432eea565245ccf8d}{F\+D\+\_\+\+G\+L\+O\+V\+E7W}}, 
+\newline
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61ead61745a2efb0ec56247c87ab485d9bf1}{F\+D\+\_\+\+G\+L\+O\+V\+E16}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61eae50e46e3653d2d2d7cb5f3c4eb5f6590}{F\+D\+\_\+\+G\+L\+O\+V\+E16W}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61eaa3a04ff8f3b04b591fe7541a8208cb14}{F\+D\+\_\+\+G\+L\+O\+V\+E14U}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61eafaa1bca87cb1d664ff8509ccfb3169d7}{F\+D\+\_\+\+G\+L\+O\+V\+E14\+UW}}, 
+\newline
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a3c2680970df8389f3845144ad797b61eab62472afd7e7ae351c1e819975569060}{F\+D\+\_\+\+G\+L\+O\+V\+E14\+U\+\_\+\+U\+SB}}
+ \}
+\item 
+enum \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646}{Efd\+Sensors}} \{ \newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a49bc45adcd6f7ea8e4c3286539e40d41}{F\+D\+\_\+\+T\+H\+U\+M\+B\+N\+E\+AR}} =0, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad7f2f72a912241e274a88941a9df8854}{F\+D\+\_\+\+T\+H\+U\+M\+B\+F\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8fa456324df0a39a33abf8ae5bdd9f82}{F\+D\+\_\+\+T\+H\+U\+M\+B\+I\+N\+D\+EX}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad58dd5b124a3dfe22fb0a3eb2625c60d}{F\+D\+\_\+\+I\+N\+D\+E\+X\+N\+E\+AR}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8cdef4fd42c0370db10bfe75721cc0d8}{F\+D\+\_\+\+I\+N\+D\+E\+X\+F\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a7a4752de88f04befe2de73608ff02d76}{F\+D\+\_\+\+I\+N\+D\+E\+X\+M\+I\+D\+D\+LE}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abd16d49e063a3ee438bb669686f7f93b}{F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+N\+E\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aafbfc055313569cc989009974b1d751e}{F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+F\+AR}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aaa867dfe8a59c3b8f17ddb64587b749f}{F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+R\+I\+NG}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aff3840b0d33cbb541662b45d037d0be8}{F\+D\+\_\+\+R\+I\+N\+G\+N\+E\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae6460d09ff75a8ccf88c6ab097e06a70}{F\+D\+\_\+\+R\+I\+N\+G\+F\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8a34575f045f03fc9e2dab1b777bd3c1}{F\+D\+\_\+\+R\+I\+N\+G\+L\+I\+T\+T\+LE}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a446c9af066dcbb03d9ada6f47c3bb333}{F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+N\+E\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a3ae9f3e824b9e8a7537c4712f7a98d66}{F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+F\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae52a03811e135af7220cd9e15e8e8e4d}{F\+D\+\_\+\+T\+H\+U\+M\+B\+P\+A\+LM}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a0c8cb309651090195a4d8ea1a800f5d9}{F\+D\+\_\+\+W\+R\+I\+S\+T\+B\+E\+ND}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a896fe084f89fc6643d647a5b0b714b05}{F\+D\+\_\+\+P\+I\+T\+CH}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abaa84222f2cd7bc5dca96014877140d3}{F\+D\+\_\+\+R\+O\+LL}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646a49bc45adcd6f7ea8e4c3286539e40d41}{F\+D\+\_\+\+T\+H\+U\+M\+B\+N\+E\+AR}} =0, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646ad7f2f72a912241e274a88941a9df8854}{F\+D\+\_\+\+T\+H\+U\+M\+B\+F\+AR}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646a8fa456324df0a39a33abf8ae5bdd9f82}{F\+D\+\_\+\+T\+H\+U\+M\+B\+I\+N\+D\+EX}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646ad58dd5b124a3dfe22fb0a3eb2625c60d}{F\+D\+\_\+\+I\+N\+D\+E\+X\+N\+E\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646a8cdef4fd42c0370db10bfe75721cc0d8}{F\+D\+\_\+\+I\+N\+D\+E\+X\+F\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646a7a4752de88f04befe2de73608ff02d76}{F\+D\+\_\+\+I\+N\+D\+E\+X\+M\+I\+D\+D\+LE}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646abd16d49e063a3ee438bb669686f7f93b}{F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+N\+E\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646aafbfc055313569cc989009974b1d751e}{F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+F\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646aaa867dfe8a59c3b8f17ddb64587b749f}{F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+R\+I\+NG}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646aff3840b0d33cbb541662b45d037d0be8}{F\+D\+\_\+\+R\+I\+N\+G\+N\+E\+AR}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646ae6460d09ff75a8ccf88c6ab097e06a70}{F\+D\+\_\+\+R\+I\+N\+G\+F\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646a8a34575f045f03fc9e2dab1b777bd3c1}{F\+D\+\_\+\+R\+I\+N\+G\+L\+I\+T\+T\+LE}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646a446c9af066dcbb03d9ada6f47c3bb333}{F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+N\+E\+AR}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646a3ae9f3e824b9e8a7537c4712f7a98d66}{F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+F\+AR}}, 
+\newline
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646ae52a03811e135af7220cd9e15e8e8e4d}{F\+D\+\_\+\+T\+H\+U\+M\+B\+P\+A\+LM}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646a0c8cb309651090195a4d8ea1a800f5d9}{F\+D\+\_\+\+W\+R\+I\+S\+T\+B\+E\+ND}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646a896fe084f89fc6643d647a5b0b714b05}{F\+D\+\_\+\+P\+I\+T\+CH}}, 
+\mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_feec2f512f3efea5fffdd7604afad028_a353ce42a1bff6adb3fea5a72513b2646abaa84222f2cd7bc5dca96014877140d3}{F\+D\+\_\+\+R\+O\+LL}}, 
+\newline
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646a49bc45adcd6f7ea8e4c3286539e40d41}{F\+D\+\_\+\+T\+H\+U\+M\+B\+N\+E\+AR}} =0, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646ad7f2f72a912241e274a88941a9df8854}{F\+D\+\_\+\+T\+H\+U\+M\+B\+F\+AR}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646a8fa456324df0a39a33abf8ae5bdd9f82}{F\+D\+\_\+\+T\+H\+U\+M\+B\+I\+N\+D\+EX}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646ad58dd5b124a3dfe22fb0a3eb2625c60d}{F\+D\+\_\+\+I\+N\+D\+E\+X\+N\+E\+AR}}, 
+\newline
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646a8cdef4fd42c0370db10bfe75721cc0d8}{F\+D\+\_\+\+I\+N\+D\+E\+X\+F\+AR}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646a7a4752de88f04befe2de73608ff02d76}{F\+D\+\_\+\+I\+N\+D\+E\+X\+M\+I\+D\+D\+LE}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646abd16d49e063a3ee438bb669686f7f93b}{F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+N\+E\+AR}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646aafbfc055313569cc989009974b1d751e}{F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+F\+AR}}, 
+\newline
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646aaa867dfe8a59c3b8f17ddb64587b749f}{F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+R\+I\+NG}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646aff3840b0d33cbb541662b45d037d0be8}{F\+D\+\_\+\+R\+I\+N\+G\+N\+E\+AR}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646ae6460d09ff75a8ccf88c6ab097e06a70}{F\+D\+\_\+\+R\+I\+N\+G\+F\+AR}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646a8a34575f045f03fc9e2dab1b777bd3c1}{F\+D\+\_\+\+R\+I\+N\+G\+L\+I\+T\+T\+LE}}, 
+\newline
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646a446c9af066dcbb03d9ada6f47c3bb333}{F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+N\+E\+AR}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646a3ae9f3e824b9e8a7537c4712f7a98d66}{F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+F\+AR}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646ae52a03811e135af7220cd9e15e8e8e4d}{F\+D\+\_\+\+T\+H\+U\+M\+B\+P\+A\+LM}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646a0c8cb309651090195a4d8ea1a800f5d9}{F\+D\+\_\+\+W\+R\+I\+S\+T\+B\+E\+ND}}, 
+\newline
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646a896fe084f89fc6643d647a5b0b714b05}{F\+D\+\_\+\+P\+I\+T\+CH}}, 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a353ce42a1bff6adb3fea5a72513b2646abaa84222f2cd7bc5dca96014877140d3}{F\+D\+\_\+\+R\+O\+LL}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$ \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a0b715d0a4e0c81338b8ae0a80de24e1a}{fd\+Open}} (char $\ast$p\+Port)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a54bc587cd715c86348261456b19ecf68}{fd\+Close}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae908829d1ee79836d327783e0b99e5fb}{fd\+Get\+Glove\+Hand}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_abf91ef9cf2fbecb8be1cf8382fbecb09}{fd\+Get\+Glove\+Type}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a17a5eaeab0bebcaaaa38e3f38315413e}{fd\+Get\+Num\+Sensors}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a1116e0d0360e2b5476bd60f000708d25}{fd\+Get\+Sensor\+Raw\+All}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, unsigned short $\ast$p\+Data)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} unsigned short \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a1f79160e9ce7a3d44495a0d7084cc170}{fd\+Get\+Sensor\+Raw}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, int n\+Sensor)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a818c75adb5e9fe641f84a661ee1e4809}{fd\+Set\+Sensor\+Raw\+All}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, unsigned short $\ast$p\+Data)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a5f9009c42300c0a45f8b84dcdced2a7e}{fd\+Set\+Sensor\+Raw}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, int n\+Sensor, unsigned short n\+Raw)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a0852d2b99409d2ec96196c7a49654812}{fd\+Get\+Sensor\+Scaled\+All}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, float $\ast$p\+Data)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} float \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a12dc206d1b9175eeaa79c96f7da4bb4b}{fd\+Get\+Sensor\+Scaled}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, int n\+Sensor)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a35d110803aeb54ee39a297c999767aae}{fd\+Get\+Num\+Gestures}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ad4aa0af97f857699655f8fce5ec72e83}{fd\+Get\+Gesture}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a82c6fea06d871a8aa82df98f31df3c92}{fd\+Get\+Calibration\+All}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, unsigned short $\ast$p\+Upper, unsigned short $\ast$p\+Lower)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a046df496dededcf1dafcf528e66f1d94}{fd\+Get\+Calibration}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, int n\+Sensor, unsigned short $\ast$p\+Upper, unsigned short $\ast$p\+Lower)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_af2ec337ac414d8fb81a3b097584887d3}{fd\+Set\+Calibration\+All}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, unsigned short $\ast$p\+Upper, unsigned short $\ast$p\+Lower)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a51fa96cdf7beb8c6ef8692ec9f844ed5}{fd\+Set\+Calibration}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, int n\+Sensor, unsigned short n\+Upper, unsigned short n\+Lower)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae3616ffc1d60861f8fd6c35a263731a0}{fd\+Reset\+Calibration}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, int n\+Sensor)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_affb08a7e40029bc2110a69467fb0209b}{fd\+Reset\+Calibration}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a93e38e3a14bc261fe8c3ff3563fc1e85}{fd\+Get\+Sensor\+Max\+All}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, float $\ast$p\+Max)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} float \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ab6e71f6ba3fd41b3110f0d3da777af80}{fd\+Get\+Sensor\+Max}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, int n\+Sensor)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3e1391eee955b3ecb0c5ca4639cd6fcd}{fd\+Set\+Sensor\+Max\+All}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, float $\ast$p\+Max)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a2c141ed631162669aab628206075ce5c}{fd\+Set\+Sensor\+Max}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, int n\+Sensor, float f\+Max)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_abdae23d03879df0c679dbfce4b6fbaa1}{fd\+Get\+Threshold\+All}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, float $\ast$p\+Upper, float $\ast$p\+Lower)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_af2bb1eb25cdcc1c7ba968d444490b5da}{fd\+Get\+Threshold}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, int n\+Sensor, float $\ast$p\+Upper, float $\ast$p\+Lower)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aeb5cd9f9ef63cc2cb58891330bd80e2c}{fd\+Set\+Threshold\+All}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, float $\ast$p\+Upper, float $\ast$p\+Lower)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a30c6639ebc930e0940a9966e30355049}{fd\+Set\+Threshold}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, int n\+Sensor, float f\+Upper, float f\+Lower)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3471df9fe5874fc45c866eee9f080f39}{fd\+Get\+Glove\+Info}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, unsigned char $\ast$p\+Data)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a99ace58109e76c25e131708f6d2527c1}{fd\+Get\+Driver\+Info}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, unsigned char $\ast$p\+Data)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aa123947258ea433b7bb80d66db44b30e}{fd\+Set\+Callback}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, void $\ast$p\+Func, \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a085f5f68a0ee4ab24d9f3954a78e8063}{L\+P\+V\+O\+ID}} param)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae87135a367204765a310c8fc166471df}{fd\+Get\+Packet\+Rate}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a5004f4238b5fb145319e4ffbf046581a}{fd\+New\+Data}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a78716af22b196e96c7402aef86302475}{fd\+Get\+F\+W\+Version\+Major}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae2276947ab41e8012cb4c54511f8a07d}{fd\+Get\+F\+W\+Version\+Minor}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a18733b8f1777b09de1399b0e67e4bbbd}{fd\+Get\+Auto\+Calibrate}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_acee11c28d219ac66edf007fda0b41b73}{fd\+Set\+Auto\+Calibrate}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} b\+Auto\+Calibrate)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_af581fbe52e6c78d7756baad9e80e1ce7}{fd\+Save\+Calibration}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, const char $\ast$p\+File\+Name)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a746783d47da3545f89784db727e50faa}{fd\+Load\+Calibration}} (\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$p\+FG, const char $\ast$p\+File\+Name)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a683df3f6bdaa0e18fedcc2e8f2846121}{fd\+Scan\+U\+SB}} (unsigned short $\ast$a\+P\+ID, int \&n\+Num\+Max)
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a1a48d8d690936f666bcac68f07c2a11f}{fd\+Scan\+U\+SB}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_abb452686968e48b67397da5f97445f5b}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_abb452686968e48b67397da5f97445f5b}} 
+\index{fglove.h@{fglove.h}!bool@{bool}}
+\index{bool@{bool}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{bool}{bool}}
+{\footnotesize\ttfamily \#define bool~int}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ac2d33ccaf63f5d5b66552b95426c0137}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ac2d33ccaf63f5d5b66552b95426c0137}} 
+\index{fglove.h@{fglove.h}!DEBUG\_LEVEL@{DEBUG\_LEVEL}}
+\index{DEBUG\_LEVEL@{DEBUG\_LEVEL}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_LEVEL}{DEBUG\_LEVEL}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+G\+\_\+\+L\+E\+V\+EL~\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a77598093df8bf08e1aac9ae486abf25e}{U\+S\+E\+R\+\_\+\+D\+E\+B\+UG}}}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aa270f48e350ff81b1e62f2c73c248ef4}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aa270f48e350ff81b1e62f2c73c248ef4}} 
+\index{fglove.h@{fglove.h}!DEV\_DEBUG@{DEV\_DEBUG}}
+\index{DEV\_DEBUG@{DEV\_DEBUG}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DEV\_DEBUG}{DEV\_DEBUG}}
+{\footnotesize\ttfamily \#define D\+E\+V\+\_\+\+D\+E\+B\+UG~1}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ac2f02c37d02b41aa8036f591f77dbe3d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ac2f02c37d02b41aa8036f591f77dbe3d}} 
+\index{fglove.h@{fglove.h}!DG14U\_INFO@{DG14U\_INFO}}
+\index{DG14U\_INFO@{DG14U\_INFO}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG14U\_INFO}{DG14U\_INFO}}
+{\footnotesize\ttfamily \#define D\+G14\+U\+\_\+\+I\+N\+FO~0x80}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a4bb49f06669a5782e811e5b524d069cd}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a4bb49f06669a5782e811e5b524d069cd}} 
+\index{fglove.h@{fglove.h}!DG14U\_L@{DG14U\_L}}
+\index{DG14U\_L@{DG14U\_L}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG14U\_L}{DG14U\_L}}
+{\footnotesize\ttfamily \#define D\+G14\+U\+\_\+L~0x01}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a23e77918c7ef6f8ca9f017e110156276}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a23e77918c7ef6f8ca9f017e110156276}} 
+\index{fglove.h@{fglove.h}!DG14U\_LW@{DG14U\_LW}}
+\index{DG14U\_LW@{DG14U\_LW}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG14U\_LW}{DG14U\_LW}}
+{\footnotesize\ttfamily \#define D\+G14\+U\+\_\+\+LW~0x03}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aacabb62face18bf77148488f65849a17}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aacabb62face18bf77148488f65849a17}} 
+\index{fglove.h@{fglove.h}!DG14U\_LW\_SLAVE@{DG14U\_LW\_SLAVE}}
+\index{DG14U\_LW\_SLAVE@{DG14U\_LW\_SLAVE}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG14U\_LW\_SLAVE}{DG14U\_LW\_SLAVE}}
+{\footnotesize\ttfamily \#define D\+G14\+U\+\_\+\+L\+W\+\_\+\+S\+L\+A\+VE~0x07}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a9c2a7aa5dee57f3edfeb82a23af4ddab}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a9c2a7aa5dee57f3edfeb82a23af4ddab}} 
+\index{fglove.h@{fglove.h}!DG14U\_R@{DG14U\_R}}
+\index{DG14U\_R@{DG14U\_R}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG14U\_R}{DG14U\_R}}
+{\footnotesize\ttfamily \#define D\+G14\+U\+\_\+R~0x00}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a539f0205da3b373a26bcfedfb58a9cdb}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a539f0205da3b373a26bcfedfb58a9cdb}} 
+\index{fglove.h@{fglove.h}!DG14U\_RW@{DG14U\_RW}}
+\index{DG14U\_RW@{DG14U\_RW}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG14U\_RW}{DG14U\_RW}}
+{\footnotesize\ttfamily \#define D\+G14\+U\+\_\+\+RW~0x02}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ac260d8cfddda6acc5881ba2346b812d9}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ac260d8cfddda6acc5881ba2346b812d9}} 
+\index{fglove.h@{fglove.h}!DG14U\_RW\_SLAVE@{DG14U\_RW\_SLAVE}}
+\index{DG14U\_RW\_SLAVE@{DG14U\_RW\_SLAVE}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG14U\_RW\_SLAVE}{DG14U\_RW\_SLAVE}}
+{\footnotesize\ttfamily \#define D\+G14\+U\+\_\+\+R\+W\+\_\+\+S\+L\+A\+VE~0x06}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a7578d9d9727a991173c2b1afbebd2438}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a7578d9d9727a991173c2b1afbebd2438}} 
+\index{fglove.h@{fglove.h}!DG5U\_L@{DG5U\_L}}
+\index{DG5U\_L@{DG5U\_L}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG5U\_L}{DG5U\_L}}
+{\footnotesize\ttfamily \#define D\+G5\+U\+\_\+L~0x11}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a40859c7ebf0ddbd0f3c9f3e86880c7bf}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a40859c7ebf0ddbd0f3c9f3e86880c7bf}} 
+\index{fglove.h@{fglove.h}!DG5U\_LW@{DG5U\_LW}}
+\index{DG5U\_LW@{DG5U\_LW}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG5U\_LW}{DG5U\_LW}}
+{\footnotesize\ttfamily \#define D\+G5\+U\+\_\+\+LW~0x13}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a07f407e3194fda5e0b7fcd4e8fd78bec}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a07f407e3194fda5e0b7fcd4e8fd78bec}} 
+\index{fglove.h@{fglove.h}!DG5U\_LW\_SLAVE@{DG5U\_LW\_SLAVE}}
+\index{DG5U\_LW\_SLAVE@{DG5U\_LW\_SLAVE}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG5U\_LW\_SLAVE}{DG5U\_LW\_SLAVE}}
+{\footnotesize\ttfamily \#define D\+G5\+U\+\_\+\+L\+W\+\_\+\+S\+L\+A\+VE~0x17}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3f3733f839878f6cf6c0c24e456f3168}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3f3733f839878f6cf6c0c24e456f3168}} 
+\index{fglove.h@{fglove.h}!DG5U\_R@{DG5U\_R}}
+\index{DG5U\_R@{DG5U\_R}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG5U\_R}{DG5U\_R}}
+{\footnotesize\ttfamily \#define D\+G5\+U\+\_\+R~0x10}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aabedd3794eca530309c351d68f06bc19}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aabedd3794eca530309c351d68f06bc19}} 
+\index{fglove.h@{fglove.h}!DG5U\_RW@{DG5U\_RW}}
+\index{DG5U\_RW@{DG5U\_RW}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG5U\_RW}{DG5U\_RW}}
+{\footnotesize\ttfamily \#define D\+G5\+U\+\_\+\+RW~0x12}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_add5f35b161d7794f12d94698eb53dd9a}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_add5f35b161d7794f12d94698eb53dd9a}} 
+\index{fglove.h@{fglove.h}!DG5U\_RW\_SLAVE@{DG5U\_RW\_SLAVE}}
+\index{DG5U\_RW\_SLAVE@{DG5U\_RW\_SLAVE}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{DG5U\_RW\_SLAVE}{DG5U\_RW\_SLAVE}}
+{\footnotesize\ttfamily \#define D\+G5\+U\+\_\+\+R\+W\+\_\+\+S\+L\+A\+VE~0x16}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a65e9886d74aaee76545e83dd09011727}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a65e9886d74aaee76545e83dd09011727}} 
+\index{fglove.h@{fglove.h}!false@{false}}
+\index{false@{false}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{false}{false}}
+{\footnotesize\ttfamily \#define false~(0)}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a472a113317d149a903384b52584efff6}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a472a113317d149a903384b52584efff6}} 
+\index{fglove.h@{fglove.h}!FGLOVEAPI@{FGLOVEAPI}}
+\index{FGLOVEAPI@{FGLOVEAPI}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{FGLOVEAPI}{FGLOVEAPI}}
+{\footnotesize\ttfamily \#define F\+G\+L\+O\+V\+E\+A\+PI}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ab521aa5010fb1afb801a899a55569e03}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ab521aa5010fb1afb801a899a55569e03}} 
+\index{fglove.h@{fglove.h}!HANDLE@{HANDLE}}
+\index{HANDLE@{HANDLE}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{HANDLE}{HANDLE}}
+{\footnotesize\ttfamily \#define H\+A\+N\+D\+LE~void$\ast$}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a085f5f68a0ee4ab24d9f3954a78e8063}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a085f5f68a0ee4ab24d9f3954a78e8063}} 
+\index{fglove.h@{fglove.h}!LPVOID@{LPVOID}}
+\index{LPVOID@{LPVOID}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{LPVOID}{LPVOID}}
+{\footnotesize\ttfamily \#define L\+P\+V\+O\+ID~void$\ast$}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a69408b182829e24010f51543490ec523}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a69408b182829e24010f51543490ec523}} 
+\index{fglove.h@{fglove.h}!MASK\_WIRELESS@{MASK\_WIRELESS}}
+\index{MASK\_WIRELESS@{MASK\_WIRELESS}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{MASK\_WIRELESS}{MASK\_WIRELESS}}
+{\footnotesize\ttfamily \#define M\+A\+S\+K\+\_\+\+W\+I\+R\+E\+L\+E\+SS~0x02}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aff55fe551a9992a54ec54621c524d0a4}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aff55fe551a9992a54ec54621c524d0a4}} 
+\index{fglove.h@{fglove.h}!SOCKET@{SOCKET}}
+\index{SOCKET@{SOCKET}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{SOCKET}{SOCKET}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+ET~unsigned int}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a41f9c5fb8b08eb5dc3edce4dcb37fee7}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a41f9c5fb8b08eb5dc3edce4dcb37fee7}} 
+\index{fglove.h@{fglove.h}!true@{true}}
+\index{true@{true}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{true}{true}}
+{\footnotesize\ttfamily \#define true~(!\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a65e9886d74aaee76545e83dd09011727}{false}})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a77598093df8bf08e1aac9ae486abf25e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a77598093df8bf08e1aac9ae486abf25e}} 
+\index{fglove.h@{fglove.h}!USER\_DEBUG@{USER\_DEBUG}}
+\index{USER\_DEBUG@{USER\_DEBUG}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{USER\_DEBUG}{USER\_DEBUG}}
+{\footnotesize\ttfamily \#define U\+S\+E\+R\+\_\+\+D\+E\+B\+UG~0}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a26aa0f2c80ad1f685199bbdef12a0336}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a26aa0f2c80ad1f685199bbdef12a0336}} 
+\index{fglove.h@{fglove.h}!VENDOR\_ID\_5DT@{VENDOR\_ID\_5DT}}
+\index{VENDOR\_ID\_5DT@{VENDOR\_ID\_5DT}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{VENDOR\_ID\_5DT}{VENDOR\_ID\_5DT}}
+{\footnotesize\ttfamily \#define V\+E\+N\+D\+O\+R\+\_\+\+I\+D\+\_\+5\+DT~0x5d70}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cc}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cc}} 
+\index{fglove.h@{fglove.h}!EfdGloveHand@{EfdGloveHand}}
+\index{EfdGloveHand@{EfdGloveHand}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{EfdGloveHand}{EfdGloveHand}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cc}{Efd\+Glove\+Hand}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_HAND\_LEFT@{FD\_HAND\_LEFT}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_HAND\_LEFT@{FD\_HAND\_LEFT}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca7666ec76695521fbd0bc3d5583ad038b}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca7666ec76695521fbd0bc3d5583ad038b}} 
+F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_HAND\_RIGHT@{FD\_HAND\_RIGHT}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_HAND\_RIGHT@{FD\_HAND\_RIGHT}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca9bdb1a19650fd9a566076c75761d9d82}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca9bdb1a19650fd9a566076c75761d9d82}} 
+F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_HAND\_LEFT@{FD\_HAND\_LEFT}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_HAND\_LEFT@{FD\_HAND\_LEFT}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca7666ec76695521fbd0bc3d5583ad038b}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca7666ec76695521fbd0bc3d5583ad038b}} 
+F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_HAND\_RIGHT@{FD\_HAND\_RIGHT}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_HAND\_RIGHT@{FD\_HAND\_RIGHT}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca9bdb1a19650fd9a566076c75761d9d82}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca9bdb1a19650fd9a566076c75761d9d82}} 
+F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_HAND\_LEFT@{FD\_HAND\_LEFT}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_HAND\_LEFT@{FD\_HAND\_LEFT}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca7666ec76695521fbd0bc3d5583ad038b}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca7666ec76695521fbd0bc3d5583ad038b}} 
+F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_HAND\_RIGHT@{FD\_HAND\_RIGHT}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_HAND\_RIGHT@{FD\_HAND\_RIGHT}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca9bdb1a19650fd9a566076c75761d9d82}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a6af8b4fc817a9f21391a3b13783dc5cca9bdb1a19650fd9a566076c75761d9d82}} 
+F\+D\+\_\+\+H\+A\+N\+D\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61e}} 
+\index{fglove.h@{fglove.h}!EfdGloveTypes@{EfdGloveTypes}}
+\index{EfdGloveTypes@{EfdGloveTypes}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{EfdGloveTypes}{EfdGloveTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61e}{Efd\+Glove\+Types}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVENONE@{FD\_GLOVENONE}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVENONE@{FD\_GLOVENONE}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea8d84824142f6417052c9237da8f768bc}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea8d84824142f6417052c9237da8f768bc}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE5U@{FD\_GLOVE5U}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE5U@{FD\_GLOVE5U}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa2350ed9678f0c6661ffd919012d3e33}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa2350ed9678f0c6661ffd919012d3e33}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E5U&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE5UW@{FD\_GLOVE5UW}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE5UW@{FD\_GLOVE5UW}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea96f13c765ccc7c3a8e24944b1fe39aea}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea96f13c765ccc7c3a8e24944b1fe39aea}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E5\+UW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE5U\_USB@{FD\_GLOVE5U\_USB}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE5U\_USB@{FD\_GLOVE5U\_USB}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea556eff214235b2c9e0b6f67cb1c1f7b5}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea556eff214235b2c9e0b6f67cb1c1f7b5}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E5\+U\+\_\+\+U\+SB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE7@{FD\_GLOVE7}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE7@{FD\_GLOVE7}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaceadbeab61116187bdfdb0c958432e3e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaceadbeab61116187bdfdb0c958432e3e}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE7W@{FD\_GLOVE7W}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE7W@{FD\_GLOVE7W}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eadff8a60545f2cdf432eea565245ccf8d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eadff8a60545f2cdf432eea565245ccf8d}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E7W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE16@{FD\_GLOVE16}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE16@{FD\_GLOVE16}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ead61745a2efb0ec56247c87ab485d9bf1}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ead61745a2efb0ec56247c87ab485d9bf1}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E16&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE16W@{FD\_GLOVE16W}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE16W@{FD\_GLOVE16W}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eae50e46e3653d2d2d7cb5f3c4eb5f6590}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eae50e46e3653d2d2d7cb5f3c4eb5f6590}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E16W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE14U@{FD\_GLOVE14U}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE14U@{FD\_GLOVE14U}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa3a04ff8f3b04b591fe7541a8208cb14}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa3a04ff8f3b04b591fe7541a8208cb14}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E14U&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE14UW@{FD\_GLOVE14UW}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE14UW@{FD\_GLOVE14UW}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eafaa1bca87cb1d664ff8509ccfb3169d7}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eafaa1bca87cb1d664ff8509ccfb3169d7}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E14\+UW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE14U\_USB@{FD\_GLOVE14U\_USB}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE14U\_USB@{FD\_GLOVE14U\_USB}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eab62472afd7e7ae351c1e819975569060}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eab62472afd7e7ae351c1e819975569060}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E14\+U\+\_\+\+U\+SB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVENONE@{FD\_GLOVENONE}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVENONE@{FD\_GLOVENONE}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea8d84824142f6417052c9237da8f768bc}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea8d84824142f6417052c9237da8f768bc}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE5U@{FD\_GLOVE5U}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE5U@{FD\_GLOVE5U}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa2350ed9678f0c6661ffd919012d3e33}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa2350ed9678f0c6661ffd919012d3e33}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E5U&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE5UW@{FD\_GLOVE5UW}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE5UW@{FD\_GLOVE5UW}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea96f13c765ccc7c3a8e24944b1fe39aea}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea96f13c765ccc7c3a8e24944b1fe39aea}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E5\+UW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE5U\_USB@{FD\_GLOVE5U\_USB}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE5U\_USB@{FD\_GLOVE5U\_USB}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea556eff214235b2c9e0b6f67cb1c1f7b5}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea556eff214235b2c9e0b6f67cb1c1f7b5}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E5\+U\+\_\+\+U\+SB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE7@{FD\_GLOVE7}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE7@{FD\_GLOVE7}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaceadbeab61116187bdfdb0c958432e3e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaceadbeab61116187bdfdb0c958432e3e}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE7W@{FD\_GLOVE7W}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE7W@{FD\_GLOVE7W}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eadff8a60545f2cdf432eea565245ccf8d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eadff8a60545f2cdf432eea565245ccf8d}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E7W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE16@{FD\_GLOVE16}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE16@{FD\_GLOVE16}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ead61745a2efb0ec56247c87ab485d9bf1}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ead61745a2efb0ec56247c87ab485d9bf1}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E16&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE16W@{FD\_GLOVE16W}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE16W@{FD\_GLOVE16W}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eae50e46e3653d2d2d7cb5f3c4eb5f6590}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eae50e46e3653d2d2d7cb5f3c4eb5f6590}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E16W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE14U@{FD\_GLOVE14U}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE14U@{FD\_GLOVE14U}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa3a04ff8f3b04b591fe7541a8208cb14}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa3a04ff8f3b04b591fe7541a8208cb14}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E14U&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE14UW@{FD\_GLOVE14UW}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE14UW@{FD\_GLOVE14UW}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eafaa1bca87cb1d664ff8509ccfb3169d7}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eafaa1bca87cb1d664ff8509ccfb3169d7}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E14\+UW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE14U\_USB@{FD\_GLOVE14U\_USB}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE14U\_USB@{FD\_GLOVE14U\_USB}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eab62472afd7e7ae351c1e819975569060}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eab62472afd7e7ae351c1e819975569060}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E14\+U\+\_\+\+U\+SB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVENONE@{FD\_GLOVENONE}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVENONE@{FD\_GLOVENONE}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea8d84824142f6417052c9237da8f768bc}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea8d84824142f6417052c9237da8f768bc}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE5U@{FD\_GLOVE5U}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE5U@{FD\_GLOVE5U}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa2350ed9678f0c6661ffd919012d3e33}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa2350ed9678f0c6661ffd919012d3e33}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E5U&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE5UW@{FD\_GLOVE5UW}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE5UW@{FD\_GLOVE5UW}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea96f13c765ccc7c3a8e24944b1fe39aea}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea96f13c765ccc7c3a8e24944b1fe39aea}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E5\+UW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE5U\_USB@{FD\_GLOVE5U\_USB}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE5U\_USB@{FD\_GLOVE5U\_USB}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea556eff214235b2c9e0b6f67cb1c1f7b5}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ea556eff214235b2c9e0b6f67cb1c1f7b5}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E5\+U\+\_\+\+U\+SB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE7@{FD\_GLOVE7}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE7@{FD\_GLOVE7}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaceadbeab61116187bdfdb0c958432e3e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaceadbeab61116187bdfdb0c958432e3e}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE7W@{FD\_GLOVE7W}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE7W@{FD\_GLOVE7W}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eadff8a60545f2cdf432eea565245ccf8d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eadff8a60545f2cdf432eea565245ccf8d}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E7W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE16@{FD\_GLOVE16}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE16@{FD\_GLOVE16}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ead61745a2efb0ec56247c87ab485d9bf1}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61ead61745a2efb0ec56247c87ab485d9bf1}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E16&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE16W@{FD\_GLOVE16W}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE16W@{FD\_GLOVE16W}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eae50e46e3653d2d2d7cb5f3c4eb5f6590}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eae50e46e3653d2d2d7cb5f3c4eb5f6590}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E16W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE14U@{FD\_GLOVE14U}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE14U@{FD\_GLOVE14U}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa3a04ff8f3b04b591fe7541a8208cb14}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eaa3a04ff8f3b04b591fe7541a8208cb14}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E14U&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE14UW@{FD\_GLOVE14UW}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE14UW@{FD\_GLOVE14UW}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eafaa1bca87cb1d664ff8509ccfb3169d7}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eafaa1bca87cb1d664ff8509ccfb3169d7}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E14\+UW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_GLOVE14U\_USB@{FD\_GLOVE14U\_USB}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_GLOVE14U\_USB@{FD\_GLOVE14U\_USB}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eab62472afd7e7ae351c1e819975569060}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3c2680970df8389f3845144ad797b61eab62472afd7e7ae351c1e819975569060}} 
+F\+D\+\_\+\+G\+L\+O\+V\+E14\+U\+\_\+\+U\+SB&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646}} 
+\index{fglove.h@{fglove.h}!EfdSensors@{EfdSensors}}
+\index{EfdSensors@{EfdSensors}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{EfdSensors}{EfdSensors}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646}{Efd\+Sensors}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBNEAR@{FD\_THUMBNEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBNEAR@{FD\_THUMBNEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a49bc45adcd6f7ea8e4c3286539e40d41}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a49bc45adcd6f7ea8e4c3286539e40d41}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBFAR@{FD\_THUMBFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBFAR@{FD\_THUMBFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad7f2f72a912241e274a88941a9df8854}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad7f2f72a912241e274a88941a9df8854}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBINDEX@{FD\_THUMBINDEX}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBINDEX@{FD\_THUMBINDEX}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8fa456324df0a39a33abf8ae5bdd9f82}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8fa456324df0a39a33abf8ae5bdd9f82}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+I\+N\+D\+EX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_INDEXNEAR@{FD\_INDEXNEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_INDEXNEAR@{FD\_INDEXNEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad58dd5b124a3dfe22fb0a3eb2625c60d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad58dd5b124a3dfe22fb0a3eb2625c60d}} 
+F\+D\+\_\+\+I\+N\+D\+E\+X\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_INDEXFAR@{FD\_INDEXFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_INDEXFAR@{FD\_INDEXFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8cdef4fd42c0370db10bfe75721cc0d8}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8cdef4fd42c0370db10bfe75721cc0d8}} 
+F\+D\+\_\+\+I\+N\+D\+E\+X\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_INDEXMIDDLE@{FD\_INDEXMIDDLE}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_INDEXMIDDLE@{FD\_INDEXMIDDLE}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a7a4752de88f04befe2de73608ff02d76}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a7a4752de88f04befe2de73608ff02d76}} 
+F\+D\+\_\+\+I\+N\+D\+E\+X\+M\+I\+D\+D\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_MIDDLENEAR@{FD\_MIDDLENEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_MIDDLENEAR@{FD\_MIDDLENEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abd16d49e063a3ee438bb669686f7f93b}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abd16d49e063a3ee438bb669686f7f93b}} 
+F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_MIDDLEFAR@{FD\_MIDDLEFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_MIDDLEFAR@{FD\_MIDDLEFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aafbfc055313569cc989009974b1d751e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aafbfc055313569cc989009974b1d751e}} 
+F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_MIDDLERING@{FD\_MIDDLERING}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_MIDDLERING@{FD\_MIDDLERING}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aaa867dfe8a59c3b8f17ddb64587b749f}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aaa867dfe8a59c3b8f17ddb64587b749f}} 
+F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+R\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_RINGNEAR@{FD\_RINGNEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_RINGNEAR@{FD\_RINGNEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aff3840b0d33cbb541662b45d037d0be8}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aff3840b0d33cbb541662b45d037d0be8}} 
+F\+D\+\_\+\+R\+I\+N\+G\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_RINGFAR@{FD\_RINGFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_RINGFAR@{FD\_RINGFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae6460d09ff75a8ccf88c6ab097e06a70}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae6460d09ff75a8ccf88c6ab097e06a70}} 
+F\+D\+\_\+\+R\+I\+N\+G\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_RINGLITTLE@{FD\_RINGLITTLE}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_RINGLITTLE@{FD\_RINGLITTLE}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8a34575f045f03fc9e2dab1b777bd3c1}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8a34575f045f03fc9e2dab1b777bd3c1}} 
+F\+D\+\_\+\+R\+I\+N\+G\+L\+I\+T\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_LITTLENEAR@{FD\_LITTLENEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_LITTLENEAR@{FD\_LITTLENEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a446c9af066dcbb03d9ada6f47c3bb333}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a446c9af066dcbb03d9ada6f47c3bb333}} 
+F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_LITTLEFAR@{FD\_LITTLEFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_LITTLEFAR@{FD\_LITTLEFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a3ae9f3e824b9e8a7537c4712f7a98d66}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a3ae9f3e824b9e8a7537c4712f7a98d66}} 
+F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBPALM@{FD\_THUMBPALM}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBPALM@{FD\_THUMBPALM}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae52a03811e135af7220cd9e15e8e8e4d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae52a03811e135af7220cd9e15e8e8e4d}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+P\+A\+LM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_WRISTBEND@{FD\_WRISTBEND}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_WRISTBEND@{FD\_WRISTBEND}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a0c8cb309651090195a4d8ea1a800f5d9}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a0c8cb309651090195a4d8ea1a800f5d9}} 
+F\+D\+\_\+\+W\+R\+I\+S\+T\+B\+E\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_PITCH@{FD\_PITCH}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_PITCH@{FD\_PITCH}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a896fe084f89fc6643d647a5b0b714b05}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a896fe084f89fc6643d647a5b0b714b05}} 
+F\+D\+\_\+\+P\+I\+T\+CH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_ROLL@{FD\_ROLL}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_ROLL@{FD\_ROLL}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abaa84222f2cd7bc5dca96014877140d3}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abaa84222f2cd7bc5dca96014877140d3}} 
+F\+D\+\_\+\+R\+O\+LL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBNEAR@{FD\_THUMBNEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBNEAR@{FD\_THUMBNEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a49bc45adcd6f7ea8e4c3286539e40d41}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a49bc45adcd6f7ea8e4c3286539e40d41}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBFAR@{FD\_THUMBFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBFAR@{FD\_THUMBFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad7f2f72a912241e274a88941a9df8854}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad7f2f72a912241e274a88941a9df8854}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBINDEX@{FD\_THUMBINDEX}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBINDEX@{FD\_THUMBINDEX}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8fa456324df0a39a33abf8ae5bdd9f82}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8fa456324df0a39a33abf8ae5bdd9f82}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+I\+N\+D\+EX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_INDEXNEAR@{FD\_INDEXNEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_INDEXNEAR@{FD\_INDEXNEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad58dd5b124a3dfe22fb0a3eb2625c60d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad58dd5b124a3dfe22fb0a3eb2625c60d}} 
+F\+D\+\_\+\+I\+N\+D\+E\+X\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_INDEXFAR@{FD\_INDEXFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_INDEXFAR@{FD\_INDEXFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8cdef4fd42c0370db10bfe75721cc0d8}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8cdef4fd42c0370db10bfe75721cc0d8}} 
+F\+D\+\_\+\+I\+N\+D\+E\+X\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_INDEXMIDDLE@{FD\_INDEXMIDDLE}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_INDEXMIDDLE@{FD\_INDEXMIDDLE}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a7a4752de88f04befe2de73608ff02d76}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a7a4752de88f04befe2de73608ff02d76}} 
+F\+D\+\_\+\+I\+N\+D\+E\+X\+M\+I\+D\+D\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_MIDDLENEAR@{FD\_MIDDLENEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_MIDDLENEAR@{FD\_MIDDLENEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abd16d49e063a3ee438bb669686f7f93b}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abd16d49e063a3ee438bb669686f7f93b}} 
+F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_MIDDLEFAR@{FD\_MIDDLEFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_MIDDLEFAR@{FD\_MIDDLEFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aafbfc055313569cc989009974b1d751e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aafbfc055313569cc989009974b1d751e}} 
+F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_MIDDLERING@{FD\_MIDDLERING}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_MIDDLERING@{FD\_MIDDLERING}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aaa867dfe8a59c3b8f17ddb64587b749f}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aaa867dfe8a59c3b8f17ddb64587b749f}} 
+F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+R\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_RINGNEAR@{FD\_RINGNEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_RINGNEAR@{FD\_RINGNEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aff3840b0d33cbb541662b45d037d0be8}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aff3840b0d33cbb541662b45d037d0be8}} 
+F\+D\+\_\+\+R\+I\+N\+G\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_RINGFAR@{FD\_RINGFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_RINGFAR@{FD\_RINGFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae6460d09ff75a8ccf88c6ab097e06a70}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae6460d09ff75a8ccf88c6ab097e06a70}} 
+F\+D\+\_\+\+R\+I\+N\+G\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_RINGLITTLE@{FD\_RINGLITTLE}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_RINGLITTLE@{FD\_RINGLITTLE}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8a34575f045f03fc9e2dab1b777bd3c1}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8a34575f045f03fc9e2dab1b777bd3c1}} 
+F\+D\+\_\+\+R\+I\+N\+G\+L\+I\+T\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_LITTLENEAR@{FD\_LITTLENEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_LITTLENEAR@{FD\_LITTLENEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a446c9af066dcbb03d9ada6f47c3bb333}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a446c9af066dcbb03d9ada6f47c3bb333}} 
+F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_LITTLEFAR@{FD\_LITTLEFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_LITTLEFAR@{FD\_LITTLEFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a3ae9f3e824b9e8a7537c4712f7a98d66}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a3ae9f3e824b9e8a7537c4712f7a98d66}} 
+F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBPALM@{FD\_THUMBPALM}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBPALM@{FD\_THUMBPALM}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae52a03811e135af7220cd9e15e8e8e4d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae52a03811e135af7220cd9e15e8e8e4d}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+P\+A\+LM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_WRISTBEND@{FD\_WRISTBEND}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_WRISTBEND@{FD\_WRISTBEND}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a0c8cb309651090195a4d8ea1a800f5d9}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a0c8cb309651090195a4d8ea1a800f5d9}} 
+F\+D\+\_\+\+W\+R\+I\+S\+T\+B\+E\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_PITCH@{FD\_PITCH}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_PITCH@{FD\_PITCH}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a896fe084f89fc6643d647a5b0b714b05}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a896fe084f89fc6643d647a5b0b714b05}} 
+F\+D\+\_\+\+P\+I\+T\+CH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_ROLL@{FD\_ROLL}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_ROLL@{FD\_ROLL}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abaa84222f2cd7bc5dca96014877140d3}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abaa84222f2cd7bc5dca96014877140d3}} 
+F\+D\+\_\+\+R\+O\+LL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBNEAR@{FD\_THUMBNEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBNEAR@{FD\_THUMBNEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a49bc45adcd6f7ea8e4c3286539e40d41}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a49bc45adcd6f7ea8e4c3286539e40d41}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBFAR@{FD\_THUMBFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBFAR@{FD\_THUMBFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad7f2f72a912241e274a88941a9df8854}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad7f2f72a912241e274a88941a9df8854}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBINDEX@{FD\_THUMBINDEX}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBINDEX@{FD\_THUMBINDEX}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8fa456324df0a39a33abf8ae5bdd9f82}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8fa456324df0a39a33abf8ae5bdd9f82}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+I\+N\+D\+EX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_INDEXNEAR@{FD\_INDEXNEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_INDEXNEAR@{FD\_INDEXNEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad58dd5b124a3dfe22fb0a3eb2625c60d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ad58dd5b124a3dfe22fb0a3eb2625c60d}} 
+F\+D\+\_\+\+I\+N\+D\+E\+X\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_INDEXFAR@{FD\_INDEXFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_INDEXFAR@{FD\_INDEXFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8cdef4fd42c0370db10bfe75721cc0d8}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8cdef4fd42c0370db10bfe75721cc0d8}} 
+F\+D\+\_\+\+I\+N\+D\+E\+X\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_INDEXMIDDLE@{FD\_INDEXMIDDLE}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_INDEXMIDDLE@{FD\_INDEXMIDDLE}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a7a4752de88f04befe2de73608ff02d76}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a7a4752de88f04befe2de73608ff02d76}} 
+F\+D\+\_\+\+I\+N\+D\+E\+X\+M\+I\+D\+D\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_MIDDLENEAR@{FD\_MIDDLENEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_MIDDLENEAR@{FD\_MIDDLENEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abd16d49e063a3ee438bb669686f7f93b}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abd16d49e063a3ee438bb669686f7f93b}} 
+F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_MIDDLEFAR@{FD\_MIDDLEFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_MIDDLEFAR@{FD\_MIDDLEFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aafbfc055313569cc989009974b1d751e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aafbfc055313569cc989009974b1d751e}} 
+F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_MIDDLERING@{FD\_MIDDLERING}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_MIDDLERING@{FD\_MIDDLERING}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aaa867dfe8a59c3b8f17ddb64587b749f}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aaa867dfe8a59c3b8f17ddb64587b749f}} 
+F\+D\+\_\+\+M\+I\+D\+D\+L\+E\+R\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_RINGNEAR@{FD\_RINGNEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_RINGNEAR@{FD\_RINGNEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aff3840b0d33cbb541662b45d037d0be8}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646aff3840b0d33cbb541662b45d037d0be8}} 
+F\+D\+\_\+\+R\+I\+N\+G\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_RINGFAR@{FD\_RINGFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_RINGFAR@{FD\_RINGFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae6460d09ff75a8ccf88c6ab097e06a70}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae6460d09ff75a8ccf88c6ab097e06a70}} 
+F\+D\+\_\+\+R\+I\+N\+G\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_RINGLITTLE@{FD\_RINGLITTLE}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_RINGLITTLE@{FD\_RINGLITTLE}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8a34575f045f03fc9e2dab1b777bd3c1}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a8a34575f045f03fc9e2dab1b777bd3c1}} 
+F\+D\+\_\+\+R\+I\+N\+G\+L\+I\+T\+T\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_LITTLENEAR@{FD\_LITTLENEAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_LITTLENEAR@{FD\_LITTLENEAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a446c9af066dcbb03d9ada6f47c3bb333}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a446c9af066dcbb03d9ada6f47c3bb333}} 
+F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_LITTLEFAR@{FD\_LITTLEFAR}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_LITTLEFAR@{FD\_LITTLEFAR}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a3ae9f3e824b9e8a7537c4712f7a98d66}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a3ae9f3e824b9e8a7537c4712f7a98d66}} 
+F\+D\+\_\+\+L\+I\+T\+T\+L\+E\+F\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_THUMBPALM@{FD\_THUMBPALM}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_THUMBPALM@{FD\_THUMBPALM}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae52a03811e135af7220cd9e15e8e8e4d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646ae52a03811e135af7220cd9e15e8e8e4d}} 
+F\+D\+\_\+\+T\+H\+U\+M\+B\+P\+A\+LM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_WRISTBEND@{FD\_WRISTBEND}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_WRISTBEND@{FD\_WRISTBEND}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a0c8cb309651090195a4d8ea1a800f5d9}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a0c8cb309651090195a4d8ea1a800f5d9}} 
+F\+D\+\_\+\+W\+R\+I\+S\+T\+B\+E\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_PITCH@{FD\_PITCH}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_PITCH@{FD\_PITCH}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a896fe084f89fc6643d647a5b0b714b05}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646a896fe084f89fc6643d647a5b0b714b05}} 
+F\+D\+\_\+\+P\+I\+T\+CH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FD\_ROLL@{FD\_ROLL}!fglove.h@{fglove.h}}\index{fglove.h@{fglove.h}!FD\_ROLL@{FD\_ROLL}}}\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abaa84222f2cd7bc5dca96014877140d3}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a353ce42a1bff6adb3fea5a72513b2646abaa84222f2cd7bc5dca96014877140d3}} 
+F\+D\+\_\+\+R\+O\+LL&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a54bc587cd715c86348261456b19ecf68}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a54bc587cd715c86348261456b19ecf68}} 
+\index{fglove.h@{fglove.h}!fdClose@{fdClose}}
+\index{fdClose@{fdClose}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdClose()}{fdClose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a18733b8f1777b09de1399b0e67e4bbbd}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a18733b8f1777b09de1399b0e67e4bbbd}} 
+\index{fglove.h@{fglove.h}!fdGetAutoCalibrate@{fdGetAutoCalibrate}}
+\index{fdGetAutoCalibrate@{fdGetAutoCalibrate}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetAutoCalibrate()}{fdGetAutoCalibrate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} fd\+Get\+Auto\+Calibrate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a046df496dededcf1dafcf528e66f1d94}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a046df496dededcf1dafcf528e66f1d94}} 
+\index{fglove.h@{fglove.h}!fdGetCalibration@{fdGetCalibration}}
+\index{fdGetCalibration@{fdGetCalibration}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetCalibration()}{fdGetCalibration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Get\+Calibration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{int}]{n\+Sensor,  }\item[{unsigned short $\ast$}]{p\+Upper,  }\item[{unsigned short $\ast$}]{p\+Lower }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a82c6fea06d871a8aa82df98f31df3c92}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a82c6fea06d871a8aa82df98f31df3c92}} 
+\index{fglove.h@{fglove.h}!fdGetCalibrationAll@{fdGetCalibrationAll}}
+\index{fdGetCalibrationAll@{fdGetCalibrationAll}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetCalibrationAll()}{fdGetCalibrationAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Get\+Calibration\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{unsigned short $\ast$}]{p\+Upper,  }\item[{unsigned short $\ast$}]{p\+Lower }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a99ace58109e76c25e131708f6d2527c1}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a99ace58109e76c25e131708f6d2527c1}} 
+\index{fglove.h@{fglove.h}!fdGetDriverInfo@{fdGetDriverInfo}}
+\index{fdGetDriverInfo@{fdGetDriverInfo}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetDriverInfo()}{fdGetDriverInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Get\+Driver\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{unsigned char $\ast$}]{p\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a78716af22b196e96c7402aef86302475}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a78716af22b196e96c7402aef86302475}} 
+\index{fglove.h@{fglove.h}!fdGetFWVersionMajor@{fdGetFWVersionMajor}}
+\index{fdGetFWVersionMajor@{fdGetFWVersionMajor}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetFWVersionMajor()}{fdGetFWVersionMajor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Get\+F\+W\+Version\+Major (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae2276947ab41e8012cb4c54511f8a07d}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae2276947ab41e8012cb4c54511f8a07d}} 
+\index{fglove.h@{fglove.h}!fdGetFWVersionMinor@{fdGetFWVersionMinor}}
+\index{fdGetFWVersionMinor@{fdGetFWVersionMinor}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetFWVersionMinor()}{fdGetFWVersionMinor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Get\+F\+W\+Version\+Minor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ad4aa0af97f857699655f8fce5ec72e83}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ad4aa0af97f857699655f8fce5ec72e83}} 
+\index{fglove.h@{fglove.h}!fdGetGesture@{fdGetGesture}}
+\index{fdGetGesture@{fdGetGesture}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetGesture()}{fdGetGesture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Get\+Gesture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae908829d1ee79836d327783e0b99e5fb}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae908829d1ee79836d327783e0b99e5fb}} 
+\index{fglove.h@{fglove.h}!fdGetGloveHand@{fdGetGloveHand}}
+\index{fdGetGloveHand@{fdGetGloveHand}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetGloveHand()}{fdGetGloveHand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Get\+Glove\+Hand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3471df9fe5874fc45c866eee9f080f39}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3471df9fe5874fc45c866eee9f080f39}} 
+\index{fglove.h@{fglove.h}!fdGetGloveInfo@{fdGetGloveInfo}}
+\index{fdGetGloveInfo@{fdGetGloveInfo}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetGloveInfo()}{fdGetGloveInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Get\+Glove\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{unsigned char $\ast$}]{p\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_abf91ef9cf2fbecb8be1cf8382fbecb09}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_abf91ef9cf2fbecb8be1cf8382fbecb09}} 
+\index{fglove.h@{fglove.h}!fdGetGloveType@{fdGetGloveType}}
+\index{fdGetGloveType@{fdGetGloveType}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetGloveType()}{fdGetGloveType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Get\+Glove\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a35d110803aeb54ee39a297c999767aae}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a35d110803aeb54ee39a297c999767aae}} 
+\index{fglove.h@{fglove.h}!fdGetNumGestures@{fdGetNumGestures}}
+\index{fdGetNumGestures@{fdGetNumGestures}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetNumGestures()}{fdGetNumGestures()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Get\+Num\+Gestures (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a17a5eaeab0bebcaaaa38e3f38315413e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a17a5eaeab0bebcaaaa38e3f38315413e}} 
+\index{fglove.h@{fglove.h}!fdGetNumSensors@{fdGetNumSensors}}
+\index{fdGetNumSensors@{fdGetNumSensors}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetNumSensors()}{fdGetNumSensors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Get\+Num\+Sensors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae87135a367204765a310c8fc166471df}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae87135a367204765a310c8fc166471df}} 
+\index{fglove.h@{fglove.h}!fdGetPacketRate@{fdGetPacketRate}}
+\index{fdGetPacketRate@{fdGetPacketRate}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetPacketRate()}{fdGetPacketRate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Get\+Packet\+Rate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ab6e71f6ba3fd41b3110f0d3da777af80}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ab6e71f6ba3fd41b3110f0d3da777af80}} 
+\index{fglove.h@{fglove.h}!fdGetSensorMax@{fdGetSensorMax}}
+\index{fdGetSensorMax@{fdGetSensorMax}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetSensorMax()}{fdGetSensorMax()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} float fd\+Get\+Sensor\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{int}]{n\+Sensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a93e38e3a14bc261fe8c3ff3563fc1e85}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a93e38e3a14bc261fe8c3ff3563fc1e85}} 
+\index{fglove.h@{fglove.h}!fdGetSensorMaxAll@{fdGetSensorMaxAll}}
+\index{fdGetSensorMaxAll@{fdGetSensorMaxAll}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetSensorMaxAll()}{fdGetSensorMaxAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Get\+Sensor\+Max\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{float $\ast$}]{p\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a1f79160e9ce7a3d44495a0d7084cc170}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a1f79160e9ce7a3d44495a0d7084cc170}} 
+\index{fglove.h@{fglove.h}!fdGetSensorRaw@{fdGetSensorRaw}}
+\index{fdGetSensorRaw@{fdGetSensorRaw}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetSensorRaw()}{fdGetSensorRaw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} unsigned short fd\+Get\+Sensor\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{int}]{n\+Sensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a1116e0d0360e2b5476bd60f000708d25}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a1116e0d0360e2b5476bd60f000708d25}} 
+\index{fglove.h@{fglove.h}!fdGetSensorRawAll@{fdGetSensorRawAll}}
+\index{fdGetSensorRawAll@{fdGetSensorRawAll}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetSensorRawAll()}{fdGetSensorRawAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Get\+Sensor\+Raw\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{unsigned short $\ast$}]{p\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a12dc206d1b9175eeaa79c96f7da4bb4b}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a12dc206d1b9175eeaa79c96f7da4bb4b}} 
+\index{fglove.h@{fglove.h}!fdGetSensorScaled@{fdGetSensorScaled}}
+\index{fdGetSensorScaled@{fdGetSensorScaled}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetSensorScaled()}{fdGetSensorScaled()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} float fd\+Get\+Sensor\+Scaled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{int}]{n\+Sensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a0852d2b99409d2ec96196c7a49654812}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a0852d2b99409d2ec96196c7a49654812}} 
+\index{fglove.h@{fglove.h}!fdGetSensorScaledAll@{fdGetSensorScaledAll}}
+\index{fdGetSensorScaledAll@{fdGetSensorScaledAll}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetSensorScaledAll()}{fdGetSensorScaledAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Get\+Sensor\+Scaled\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{float $\ast$}]{p\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_af2bb1eb25cdcc1c7ba968d444490b5da}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_af2bb1eb25cdcc1c7ba968d444490b5da}} 
+\index{fglove.h@{fglove.h}!fdGetThreshold@{fdGetThreshold}}
+\index{fdGetThreshold@{fdGetThreshold}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetThreshold()}{fdGetThreshold()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Get\+Threshold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{int}]{n\+Sensor,  }\item[{float $\ast$}]{p\+Upper,  }\item[{float $\ast$}]{p\+Lower }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_abdae23d03879df0c679dbfce4b6fbaa1}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_abdae23d03879df0c679dbfce4b6fbaa1}} 
+\index{fglove.h@{fglove.h}!fdGetThresholdAll@{fdGetThresholdAll}}
+\index{fdGetThresholdAll@{fdGetThresholdAll}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdGetThresholdAll()}{fdGetThresholdAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Get\+Threshold\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{float $\ast$}]{p\+Upper,  }\item[{float $\ast$}]{p\+Lower }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a746783d47da3545f89784db727e50faa}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a746783d47da3545f89784db727e50faa}} 
+\index{fglove.h@{fglove.h}!fdLoadCalibration@{fdLoadCalibration}}
+\index{fdLoadCalibration@{fdLoadCalibration}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdLoadCalibration()}{fdLoadCalibration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} fd\+Load\+Calibration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{const char $\ast$}]{p\+File\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a5004f4238b5fb145319e4ffbf046581a}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a5004f4238b5fb145319e4ffbf046581a}} 
+\index{fglove.h@{fglove.h}!fdNewData@{fdNewData}}
+\index{fdNewData@{fdNewData}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdNewData()}{fdNewData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} fd\+New\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a0b715d0a4e0c81338b8ae0a80de24e1a}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a0b715d0a4e0c81338b8ae0a80de24e1a}} 
+\index{fglove.h@{fglove.h}!fdOpen@{fdOpen}}
+\index{fdOpen@{fdOpen}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdOpen()}{fdOpen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{structfd_glove}{fd\+Glove}}$\ast$ fd\+Open (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Port }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_affb08a7e40029bc2110a69467fb0209b}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_affb08a7e40029bc2110a69467fb0209b}} 
+\index{fglove.h@{fglove.h}!fdResetCalibration@{fdResetCalibration}}
+\index{fdResetCalibration@{fdResetCalibration}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdResetCalibration()}{fdResetCalibration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Reset\+Calibration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae3616ffc1d60861f8fd6c35a263731a0}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_ae3616ffc1d60861f8fd6c35a263731a0}} 
+\index{fglove.h@{fglove.h}!fdResetCalibration@{fdResetCalibration}}
+\index{fdResetCalibration@{fdResetCalibration}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdResetCalibration()}{fdResetCalibration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Reset\+Calibration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{int}]{n\+Sensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_af581fbe52e6c78d7756baad9e80e1ce7}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_af581fbe52e6c78d7756baad9e80e1ce7}} 
+\index{fglove.h@{fglove.h}!fdSaveCalibration@{fdSaveCalibration}}
+\index{fdSaveCalibration@{fdSaveCalibration}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSaveCalibration()}{fdSaveCalibration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} fd\+Save\+Calibration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{const char $\ast$}]{p\+File\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a1a48d8d690936f666bcac68f07c2a11f}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a1a48d8d690936f666bcac68f07c2a11f}} 
+\index{fglove.h@{fglove.h}!fdScanUSB@{fdScanUSB}}
+\index{fdScanUSB@{fdScanUSB}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdScanUSB()}{fdScanUSB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Scan\+U\+SB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a683df3f6bdaa0e18fedcc2e8f2846121}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a683df3f6bdaa0e18fedcc2e8f2846121}} 
+\index{fglove.h@{fglove.h}!fdScanUSB@{fdScanUSB}}
+\index{fdScanUSB@{fdScanUSB}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdScanUSB()}{fdScanUSB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} int fd\+Scan\+U\+SB (\begin{DoxyParamCaption}\item[{unsigned short $\ast$}]{a\+P\+ID,  }\item[{int \&}]{n\+Num\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_acee11c28d219ac66edf007fda0b41b73}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_acee11c28d219ac66edf007fda0b41b73}} 
+\index{fglove.h@{fglove.h}!fdSetAutoCalibrate@{fdSetAutoCalibrate}}
+\index{fdSetAutoCalibrate@{fdSetAutoCalibrate}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSetAutoCalibrate()}{fdSetAutoCalibrate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} fd\+Set\+Auto\+Calibrate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}}}]{b\+Auto\+Calibrate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a51fa96cdf7beb8c6ef8692ec9f844ed5}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a51fa96cdf7beb8c6ef8692ec9f844ed5}} 
+\index{fglove.h@{fglove.h}!fdSetCalibration@{fdSetCalibration}}
+\index{fdSetCalibration@{fdSetCalibration}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSetCalibration()}{fdSetCalibration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Set\+Calibration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{int}]{n\+Sensor,  }\item[{unsigned short}]{n\+Upper,  }\item[{unsigned short}]{n\+Lower }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_af2ec337ac414d8fb81a3b097584887d3}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_af2ec337ac414d8fb81a3b097584887d3}} 
+\index{fglove.h@{fglove.h}!fdSetCalibrationAll@{fdSetCalibrationAll}}
+\index{fdSetCalibrationAll@{fdSetCalibrationAll}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSetCalibrationAll()}{fdSetCalibrationAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Set\+Calibration\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{unsigned short $\ast$}]{p\+Upper,  }\item[{unsigned short $\ast$}]{p\+Lower }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aa123947258ea433b7bb80d66db44b30e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aa123947258ea433b7bb80d66db44b30e}} 
+\index{fglove.h@{fglove.h}!fdSetCallback@{fdSetCallback}}
+\index{fdSetCallback@{fdSetCallback}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSetCallback()}{fdSetCallback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Set\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{void $\ast$}]{p\+Func,  }\item[{\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a085f5f68a0ee4ab24d9f3954a78e8063}{L\+P\+V\+O\+ID}}}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a2c141ed631162669aab628206075ce5c}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a2c141ed631162669aab628206075ce5c}} 
+\index{fglove.h@{fglove.h}!fdSetSensorMax@{fdSetSensorMax}}
+\index{fdSetSensorMax@{fdSetSensorMax}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSetSensorMax()}{fdSetSensorMax()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Set\+Sensor\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{int}]{n\+Sensor,  }\item[{float}]{f\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3e1391eee955b3ecb0c5ca4639cd6fcd}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a3e1391eee955b3ecb0c5ca4639cd6fcd}} 
+\index{fglove.h@{fglove.h}!fdSetSensorMaxAll@{fdSetSensorMaxAll}}
+\index{fdSetSensorMaxAll@{fdSetSensorMaxAll}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSetSensorMaxAll()}{fdSetSensorMaxAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Set\+Sensor\+Max\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{float $\ast$}]{p\+Max }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a5f9009c42300c0a45f8b84dcdced2a7e}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a5f9009c42300c0a45f8b84dcdced2a7e}} 
+\index{fglove.h@{fglove.h}!fdSetSensorRaw@{fdSetSensorRaw}}
+\index{fdSetSensorRaw@{fdSetSensorRaw}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSetSensorRaw()}{fdSetSensorRaw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Set\+Sensor\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{int}]{n\+Sensor,  }\item[{unsigned short}]{n\+Raw }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a818c75adb5e9fe641f84a661ee1e4809}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a818c75adb5e9fe641f84a661ee1e4809}} 
+\index{fglove.h@{fglove.h}!fdSetSensorRawAll@{fdSetSensorRawAll}}
+\index{fdSetSensorRawAll@{fdSetSensorRawAll}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSetSensorRawAll()}{fdSetSensorRawAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Set\+Sensor\+Raw\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{unsigned short $\ast$}]{p\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a30c6639ebc930e0940a9966e30355049}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_a30c6639ebc930e0940a9966e30355049}} 
+\index{fglove.h@{fglove.h}!fdSetThreshold@{fdSetThreshold}}
+\index{fdSetThreshold@{fdSetThreshold}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSetThreshold()}{fdSetThreshold()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Set\+Threshold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{int}]{n\+Sensor,  }\item[{float}]{f\+Upper,  }\item[{float}]{f\+Lower }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aeb5cd9f9ef63cc2cb58891330bd80e2c}\label{_libraries_01and_01dependencies_25_d_t_data_glove_ultra___s_d_k___linux__32and64bit__v2_832__25_c8e3363dfac79afd1418c5b94eaccae2_aeb5cd9f9ef63cc2cb58891330bd80e2c}} 
+\index{fglove.h@{fglove.h}!fdSetThresholdAll@{fdSetThresholdAll}}
+\index{fdSetThresholdAll@{fdSetThresholdAll}!fglove.h@{fglove.h}}
+\doxysubsubsection{\texorpdfstring{fdSetThresholdAll()}{fdSetThresholdAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_a472a113317d149a903384b52584efff6}{F\+G\+L\+O\+V\+E\+A\+PI}} void fd\+Set\+Threshold\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$}]{p\+FG,  }\item[{float $\ast$}]{p\+Upper,  }\item[{float $\ast$}]{p\+Lower }\end{DoxyParamCaption})}
+

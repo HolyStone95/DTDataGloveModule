@@ -1,0 +1,156 @@
+\hypertarget{md_readme_autotoc_md1}{}\doxysection{Genereal Information}\label{md_readme_autotoc_md1}
+
+
+
+\begin{DoxyItemize}
+\item Index\+:
+\begin{DoxyEnumerate}
+\item \href{\#general-information}{\texttt{ General Information}}
+\item \href{\#install}{\texttt{ Installation}}
+\begin{DoxyItemize}
+\item \href{\#requirements}{\texttt{ Requirements}}
+\item \href{\#install-the-glove-library-and-sdk}{\texttt{ Install the glove library and S\+DK}}
+\item \href{\#cmake-module}{\texttt{ C\+Make Module}}
+\item \href{\#extractor-module}{\texttt{ Extractor Module}}
+\end{DoxyItemize}
+\item \href{\#run}{\texttt{ Run}}
+\item \href{\#functionalities}{\texttt{ Functionalities}}
+\item \href{\#source-code-documentation}{\texttt{ Source Code Documentation}}
+\item \href{\#authors}{\texttt{ Authors}}
+\begin{DoxyItemize}
+\item \href{\#software}{\texttt{ Software}}
+\item \href{\#readme}{\texttt{ R\+E\+A\+D\+ME}}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+\end{DoxyItemize}
+
+This package here presented has been developed to implement the necessary yarp architecture in order to be able to extract data and information from the glove, thanks to its S\+DK, while being in a yarp network. This will allow the user to link the glove with other yarp devices or robots like I\+Cub. The glove used it\textquotesingle{}s the {\itshape 5DT Data Glove 14 Ultra} developed by {\itshape F\+I\+F\+TH D\+I\+M\+E\+N\+S\+I\+ON T\+E\+C\+H\+N\+O\+L\+O\+G\+I\+ES} and the website page can be found at \+: \href{https://5dt.com/5dt-data-glove-ultra/}{\texttt{ 5DT}}. The manual and the datasheet for the glove is present in the project folder {\itshape Libraries and dependencies}. The most importatnt features of the glove are the facts that the S\+DK provides a way to recognize 14 different poses thanks to the integration of the measurements arriving from the sensors. The full description of the glove, its functionalities and hardware specification can be found in the manual.
+
+The implementation consist in a C\+Make module that works using a thread. The module simply opens two ports, one for for writing purposes and one for reading. Another script called {\itshape extractor} will extract data from the glove as fast as possible, and show the information extracted before sending it to the {\itshape reading} port controlled by the {\itshape thread} script. The communication is handled by two Buffered Ports\+: one is called /\+D\+T\+Data\+Glove/sender\+:out ( the one on which {\itshape extractor} writes onto ), and the other is called /\+D\+T\+Data\+Glove/input\+:in ( the reading one handled by the {\itshape thread} script ). The connection is handled in the {\itshape extractor} script and works with tcp protocol.
+
+\begin{quote}
+Note\+: in order to run the Y\+A\+RP code, yarp has to be installed (see \href{https://www.yarp.it/latest/install_yarp_linux.html}{\texttt{ installing Y\+A\+RP only}} or \href{https://github.com/robotology/robotology-superbuild}{\texttt{ install the robotology i\+Cub environment}}). \end{quote}
+\hypertarget{md_readme_autotoc_md2}{}\doxysection{Install}\label{md_readme_autotoc_md2}
+\hypertarget{md_readme_autotoc_md3}{}\doxysubsection{Requirements}\label{md_readme_autotoc_md3}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ software }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ version }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ link }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ optional  }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ software }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ version }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ link }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ optional  }\\\cline{1-4}
+\endhead
+python &$>$= 3.\+8 &\href{https://www.python.org/downloads/}{\texttt{ python}} &no  \\\cline{1-4}
+i\+Cub environment &latest &\href{https://github.com/robotology/robotology-superbuild}{\texttt{ robotology-\/superbuild}} &no  \\\cline{1-4}
+5D\+T\+Data\+Glove linux S\+DK &latest &\href{https://5dt.com/5dt-data-glove-ultra/}{\texttt{ 5D\+T\+Data\+Glove page}} &no  \\\cline{1-4}
+\end{longtabu}
+
+
+\begin{quote}
+Note\+: The 5D\+T\+Data\+Glove S\+DK is also present in this project \mbox{[}here\mbox{]}(Libraries and dependencies), but look at the website for newer versions if possible. \end{quote}
+
+
+\begin{quote}
+Note\+: Once installed, the S\+DK provides some cpp examples in order to show the possible uses of the glove, they can be found in {\ttfamily /\+Libraries and dependencies/5\+D\+T\+Data\+Glove\+Ultra\+\_\+\+S\+D\+K\+\_\+\+Linux\+\_\+32and64bit\+\_\+v2.\+32\+\_\+25\+March2011/fd\+Glove/examples} and they need to be built using {\itshape make} command. Because of that the gcc compiler needs to be installed on your system, and can be installed using \end{quote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt update}
+\DoxyCodeLine{sudo apt install build-\/essential}
+\DoxyCodeLine{gcc -\/-\/version}
+\end{DoxyCode}
+\hypertarget{md_readme_autotoc_md4}{}\doxysubsection{Install the glove library and S\+DK}\label{md_readme_autotoc_md4}
+The installation is pretty straight-\/forward , simply get into {\ttfamily $\ast$5\+D\+T\+Data\+Glove\+\_\+\+S\+D\+K$\ast$/fd\+Glove/install} and then in the folder corresponding to your system architecture (64 or 32 bit) run the bash installation file
+
+\begin{quote}
+Note\+: you might need to modify some permission in order to run the bash script with {\ttfamily chmod} \end{quote}
+\hypertarget{md_readme_autotoc_md5}{}\doxysubsection{C\+Make Module}\label{md_readme_autotoc_md5}
+Part of the code in this repository is built in c++, and is using C\+Make to link and build all the required dependencies. The procedure is the same encountered with any other module in the \href{https://icub.iit.it/}{\texttt{ i\+Cub project}} but it\textquotesingle{}s anyway presented here for reference.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{.../DTDataGlove\$ mkdir build}
+\DoxyCodeLine{.../DTDataGlove\$ cd build}
+\DoxyCodeLine{.../DTDataGlove/build\$ ccmake ../}
+\end{DoxyCode}
+
+
+in the interface that pops up select $\ast$$\ast$\textquotesingle{}c\textquotesingle{}$\ast$$\ast$ to configure, then $\ast$$\ast$\textquotesingle{}e\textquotesingle{}$\ast$$\ast$ in the second interface, again $\ast$$\ast$\textquotesingle{}c\textquotesingle{}$\ast$$\ast$, again $\ast$$\ast$\textquotesingle{}e\textquotesingle{}$\ast$$\ast$, and lastly $\ast$$\ast$\textquotesingle{}g\textquotesingle{}$\ast$$\ast$.
+
+you can then start the make process
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{.../DTDataGlove/build\$ make}
+\DoxyCodeLine{.../DTDataGlove/build\$ sudo make install}
+\end{DoxyCode}
+
+
+\begin{quote}
+Note\+: sudo is required if the Y\+A\+RP folder is under the {\ttfamily /usr/local/src/robot} path, which might require root privilegies to access. \end{quote}
+
+
+This will build the {\bfseries{D\+T\+Data\+Glove}} module and install this module\textquotesingle{}s configuration file -\/ {\ttfamily D\+T\+Data\+Glove\+Config.\+ini} -\/ under a path visible by Y\+A\+RP.\hypertarget{md_readme_autotoc_md6}{}\doxysubsection{Extractor Module}\label{md_readme_autotoc_md6}
+The Extractor module is also compiled using C\+Make, so get in the folder /\+D\+T\+Data\+Glove/extractor and\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{.../DTDataGlove/extractor\$ mkdir build}
+\DoxyCodeLine{.../DTDataGlove/extractor\$ cd build}
+\DoxyCodeLine{.../DTDataGlove/extractor/build\$ ccmake ../}
+\end{DoxyCode}
+
+
+in the interface that pops up select $\ast$$\ast$\textquotesingle{}c\textquotesingle{}$\ast$$\ast$ to configure, then $\ast$$\ast$\textquotesingle{}e\textquotesingle{}$\ast$$\ast$ in the second interface, again $\ast$$\ast$\textquotesingle{}c\textquotesingle{}$\ast$$\ast$, again $\ast$$\ast$\textquotesingle{}e\textquotesingle{}$\ast$$\ast$, and lastly $\ast$$\ast$\textquotesingle{}g\textquotesingle{}$\ast$$\ast$.
+
+you can then start the make process
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{.../DTDataGlove/extractor/build\$ make}
+\end{DoxyCode}
+
+
+This will generate an executable called {\bfseries{extractor}}.\hypertarget{md_readme_autotoc_md7}{}\doxysection{Run}\label{md_readme_autotoc_md7}
+The glove needs to be connected through any U\+SB port.
+
+As with any Y\+A\+RP module, the first thing to run is the {\ttfamily yarpserver}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ yarpserver}
+\end{DoxyCode}
+
+
+After which -\/ in another shell -\/ we can execute the executable\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$ cd /DTDataGlove/build/bin}
+\DoxyCodeLine{\$ ./DTDataGlove}
+\end{DoxyCode}
+
+
+After a while the {\bfseries{thread}} module should be up, we then go in the folder /\+D\+T\+Data\+Glove/extractor/build and \+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{.../DTDataGlove/extractor/build\$ ./extractor}
+\end{DoxyCode}
+\hypertarget{md_readme_autotoc_md8}{}\doxysection{Functionality}\label{md_readme_autotoc_md8}
+Once everything is running and the connection is active we can start extracting the data from the glove, which will be displayed using the yarp {\itshape Y\+Info} functionality. The data will provide the normalized values for the sensors and the respective classified pose thanks to some S\+DK functions that allow pose recognition.
+
+In the terminal running the {\bfseries{extractor}} it will be displayed as a formatted version and it will also be displayed the inferred gesture. In the terminal running the {\bfseries{D\+T\+Data\+Glove}} module will be displayed only the normalized values. The handling of that data is left to the users depending on the usage necessary
+
+$>$Note \+: For all the complete documentation of the glove S\+DK refer to the glove manual.\hypertarget{md_readme_autotoc_md9}{}\doxysection{Source Code Documentation}\label{md_readme_autotoc_md9}
+The complete source code documentation produced thanks to {\itshape Doxygen} can be found at this link \+: \href{file:///usr/local/src/robot/cognitiveInteraction/DTDataGloveModule/DTDataGloveModule/html/index.html}{\texttt{ Documentation}}. It\textquotesingle{}s the file called {\bfseries{index.\+html}} in the folder {\itshape D\+T\+Data\+Glove\+Module/\+D\+T\+Data\+Glove\+Module/html}.\hypertarget{md_readme_autotoc_md10}{}\doxysection{Authors}\label{md_readme_autotoc_md10}
+\hypertarget{md_readme_autotoc_md11}{}\doxysubsection{Software}\label{md_readme_autotoc_md11}
+
+\begin{DoxyItemize}
+\item Iacopo Pietrasanta(\href{mailto:iacopo.pietrasanta@iit.it}{\texttt{ iacopo.\+pietrasanta@iit.\+it}})
+\end{DoxyItemize}\hypertarget{md_readme_autotoc_md12}{}\doxysubsection{R\+E\+A\+D\+ME}\label{md_readme_autotoc_md12}
+
+\begin{DoxyItemize}
+\item Iacopo Pietrasanta(\href{mailto:iacopo.pietrasanta@iit.it}{\texttt{ iacopo.\+pietrasanta@iit.\+it}}) 
+\end{DoxyItemize}

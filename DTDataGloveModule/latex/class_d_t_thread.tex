@@ -1,0 +1,145 @@
+\hypertarget{class_d_t_thread}{}\doxysection{D\+T\+Thread Class Reference}
+\label{class_d_t_thread}\index{DTThread@{DTThread}}
+
+
+{\ttfamily \#include $<$D\+T\+Thread.\+h$>$}
+
+
+
+Inheritance diagram for D\+T\+Thread\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_d_t_thread__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for D\+T\+Thread\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_d_t_thread__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_t_thread_a1a118542c2663a07934c3458fa137d95}{D\+T\+Thread}} ()
+\item 
+\mbox{\hyperlink{class_d_t_thread_aa8c587b1e852f2925f0099ea09ef3533}{D\+T\+Thread}} (yarp\+::os\+::\+Resource\+Finder \&rf)
+\item 
+\mbox{\hyperlink{class_d_t_thread_ae6616b2aff5b3c5bc0ae6e1f9f2fc7c8}{$\sim$\+D\+T\+Thread}} ()
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} \mbox{\hyperlink{class_d_t_thread_a51742f1b0c1071dbcf416f651de7e949}{thread\+Init}} ()
+\item 
+void \mbox{\hyperlink{class_d_t_thread_ae2703bde151e368a71e489e535bff543}{thread\+Release}} ()
+\item 
+void \mbox{\hyperlink{class_d_t_thread_a0a8e6102c56bf8667431c3287c80d484}{run}} ()
+\item 
+void \mbox{\hyperlink{class_d_t_thread_a562d2fd0f2be3724a13e91413e8da04c}{on\+Stop}} ()
+\item 
+void \mbox{\hyperlink{class_d_t_thread_a971cb3a51601101f3022146bd122d285}{close}} ()
+\item 
+void \mbox{\hyperlink{class_d_t_thread_a7bcdb9654dcaeb99081fe32528b1b6db}{set\+Name}} (std\+::string str)
+\item 
+std\+::string \mbox{\hyperlink{class_d_t_thread_a36738f5ca34ba7452e924f18eb105543}{get\+Name}} (const char $\ast$p)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_t_thread_a1a118542c2663a07934c3458fa137d95}\label{class_d_t_thread_a1a118542c2663a07934c3458fa137d95}} 
+\index{DTThread@{DTThread}!DTThread@{DTThread}}
+\index{DTThread@{DTThread}!DTThread@{DTThread}}
+\doxysubsubsection{\texorpdfstring{DTThread()}{DTThread()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily D\+T\+Thread\+::\+D\+T\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Normal constructor \mbox{\Hypertarget{class_d_t_thread_aa8c587b1e852f2925f0099ea09ef3533}\label{class_d_t_thread_aa8c587b1e852f2925f0099ea09ef3533}} 
+\index{DTThread@{DTThread}!DTThread@{DTThread}}
+\index{DTThread@{DTThread}!DTThread@{DTThread}}
+\doxysubsubsection{\texorpdfstring{DTThread()}{DTThread()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily D\+T\+Thread\+::\+D\+T\+Thread (\begin{DoxyParamCaption}\item[{yarp\+::os\+::\+Resource\+Finder \&}]{\+\_\+rf }\end{DoxyParamCaption})}
+
+Parametrized constructor \mbox{\Hypertarget{class_d_t_thread_ae6616b2aff5b3c5bc0ae6e1f9f2fc7c8}\label{class_d_t_thread_ae6616b2aff5b3c5bc0ae6e1f9f2fc7c8}} 
+\index{DTThread@{DTThread}!````~DTThread@{$\sim$DTThread}}
+\index{````~DTThread@{$\sim$DTThread}!DTThread@{DTThread}}
+\doxysubsubsection{\texorpdfstring{$\sim$DTThread()}{~DTThread()}}
+{\footnotesize\ttfamily D\+T\+Thread\+::$\sim$\+D\+T\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_t_thread_a971cb3a51601101f3022146bd122d285}\label{class_d_t_thread_a971cb3a51601101f3022146bd122d285}} 
+\index{DTThread@{DTThread}!close@{close}}
+\index{close@{close}!DTThread@{DTThread}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void D\+T\+Thread\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d_t_thread_a36738f5ca34ba7452e924f18eb105543}\label{class_d_t_thread_a36738f5ca34ba7452e924f18eb105543}} 
+\index{DTThread@{DTThread}!getName@{getName}}
+\index{getName@{getName}!DTThread@{DTThread}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string D\+T\+Thread\+::get\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p }\end{DoxyParamCaption})}
+
+The get name function
+
+This function gets the name of the thread
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Is a const char$\ast$ containing the desired thread name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_t_thread_a562d2fd0f2be3724a13e91413e8da04c}\label{class_d_t_thread_a562d2fd0f2be3724a13e91413e8da04c}} 
+\index{DTThread@{DTThread}!onStop@{onStop}}
+\index{onStop@{onStop}!DTThread@{DTThread}}
+\doxysubsubsection{\texorpdfstring{onStop()}{onStop()}}
+{\footnotesize\ttfamily void D\+T\+Thread\+::on\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The stop thread function
+
+This function simply interrupts and closes the two ports. \mbox{\Hypertarget{class_d_t_thread_a0a8e6102c56bf8667431c3287c80d484}\label{class_d_t_thread_a0a8e6102c56bf8667431c3287c80d484}} 
+\index{DTThread@{DTThread}!run@{run}}
+\index{run@{run}!DTThread@{DTThread}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void D\+T\+Thread\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The run function
+
+This function simply reads from the input port and prints out the received values representing normalized values of the fingers \mbox{\Hypertarget{class_d_t_thread_a7bcdb9654dcaeb99081fe32528b1b6db}\label{class_d_t_thread_a7bcdb9654dcaeb99081fe32528b1b6db}} 
+\index{DTThread@{DTThread}!setName@{setName}}
+\index{setName@{setName}!DTThread@{DTThread}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void D\+T\+Thread\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+The set name function
+
+This function sets the name of the thread
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Is a string containing the desired thread name. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_d_t_thread_a51742f1b0c1071dbcf416f651de7e949}\label{class_d_t_thread_a51742f1b0c1071dbcf416f651de7e949}} 
+\index{DTThread@{DTThread}!threadInit@{threadInit}}
+\index{threadInit@{threadInit}!DTThread@{DTThread}}
+\doxysubsubsection{\texorpdfstring{threadInit()}{threadInit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} D\+T\+Thread\+::thread\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Thread Init function
+
+This function handles the initialization phase of the thread specifically it opens two Buffered\+Ports, one for input, one for output. \mbox{\Hypertarget{class_d_t_thread_ae2703bde151e368a71e489e535bff543}\label{class_d_t_thread_ae2703bde151e368a71e489e535bff543}} 
+\index{DTThread@{DTThread}!threadRelease@{threadRelease}}
+\index{threadRelease@{threadRelease}!DTThread@{DTThread}}
+\doxysubsubsection{\texorpdfstring{threadRelease()}{threadRelease()}}
+{\footnotesize\ttfamily void D\+T\+Thread\+::thread\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The thread release function
+
+This function is in charge of releasing the thread 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+D\+Tdata\+Glove/include/\mbox{\hyperlink{_d_t_thread_8h}{D\+T\+Thread.\+h}}\item 
+src/\+D\+Tdata\+Glove/src/\mbox{\hyperlink{_d_t_thread_8cpp}{D\+T\+Thread.\+cpp}}\end{DoxyCompactItemize}

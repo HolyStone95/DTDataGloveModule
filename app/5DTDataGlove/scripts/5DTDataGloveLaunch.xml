@@ -1,0 +1,20 @@
+<application>
+    <name>DTDataGlove Demo</name>
+
+    <!-- ==================== MODULES ==================== -->
+
+    <module>
+      	<name>DTDataGlove</name>
+	    <parameters></parameters>
+      	<node>icubsrv</node>
+    </module>
+
+    <!-- ==================== CONNECTIONS ==================== -->
+
+    <connection>
+        <from>/DTDataGlove/sender:out</from>
+        <to>/DTDataGlove/input:in</to>
+        <protocol>tcp</protocol>
+    </connection>
+
+</application>

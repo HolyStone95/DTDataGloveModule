@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/extractor.dir/extractor.cpp.o  -o extractor  -Wl,-rpath,/usr/local/src/robot/robotology-superbuild/build/install/lib /usr/local/src/robot/robotology-superbuild/build/install/lib/libYARP_init.so.3.6.0 -lfglove /usr/local/src/robot/robotology-superbuild/build/install/lib/libYARP_os.so.3.6.0 

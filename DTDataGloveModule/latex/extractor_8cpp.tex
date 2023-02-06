@@ -1,0 +1,191 @@
+\hypertarget{extractor_8cpp}{}\doxysection{extractor/extractor.cpp File Reference}
+\label{extractor_8cpp}\index{extractor/extractor.cpp@{extractor/extractor.cpp}}
+{\ttfamily \#include $<$yarp/os/\+Bottle.\+h$>$}\newline
+{\ttfamily \#include $<$yarp/os/\+Buffered\+Port.\+h$>$}\newline
+{\ttfamily \#include $<$yarp/os/\+Network.\+h$>$}\newline
+{\ttfamily \#include $<$yarp/os/\+Port.\+h$>$}\newline
+{\ttfamily \#include $<$yarp/os/\+Time.\+h$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$yarp/os/all.\+h$>$}\newline
+{\ttfamily \#include $<$yarp/sig/all.\+h$>$}\newline
+{\ttfamily \#include $<$yarp/dev/all.\+h$>$}\newline
+{\ttfamily \#include $<$fglove.\+h$>$}\newline
+Include dependency graph for extractor.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{extractor_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{extractor_8cpp_ab1c4e99be670259110a5354d87c8d89b}{get\+Gestures}} (int gesture)
+\item 
+void \mbox{\hyperlink{extractor_8cpp_a49cd79fd06f4f93a8df3e5bd8449a2f0}{print\+Fingers\+Value}} (float $\ast$glove\+A\+\_\+scaled)
+\item 
+void \mbox{\hyperlink{extractor_8cpp_af87e235de28b44af4a3cd66d5af0af12}{get\+Glove\+Info}} ()
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} \mbox{\hyperlink{extractor_8cpp_af6b57b3881e27510cd3f1b9462633090}{configure\+Glove}} (char $\ast$port)
+\item 
+void \mbox{\hyperlink{extractor_8cpp_a940a23a199d2f68244268cfb4305e2c7}{extract\+Glove\+Data}} ()
+\item 
+\mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} \mbox{\hyperlink{extractor_8cpp_a73a127b15589dfc32d05d3bde70bd4cf}{close\+Glove}} ()
+\item 
+int \mbox{\hyperlink{extractor_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr double \mbox{\hyperlink{extractor_8cpp_a4be851560df0d31709c314e821eaebec}{loop\+\_\+delay}} = 1.\+0
+\item 
+constexpr size\+\_\+t \mbox{\hyperlink{extractor_8cpp_a1e48ede00e20997730ab8956413cbeb9}{top}} = 100
+\item 
+\mbox{\hyperlink{structfd_glove}{fd\+Glove}} $\ast$ \mbox{\hyperlink{extractor_8cpp_abf31fed954b31a37bc7206b4d170200e}{p\+GloveA}} = N\+U\+LL
+\item 
+float \mbox{\hyperlink{extractor_8cpp_afa93e0e16777315c68701a56fabef6db}{finger\+\_\+values}} \mbox{[}18\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{extractor_8cpp_a73a127b15589dfc32d05d3bde70bd4cf}\label{extractor_8cpp_a73a127b15589dfc32d05d3bde70bd4cf}} 
+\index{extractor.cpp@{extractor.cpp}!closeGlove@{closeGlove}}
+\index{closeGlove@{closeGlove}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{closeGlove()}{closeGlove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} close\+Glove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+close\+Glove function
+
+This function simply closes the glove once the usage is finished.
+
+\begin{DoxyReturn}{Returns}
+{\itshape boolean} used to check if successful or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extractor_8cpp_af6b57b3881e27510cd3f1b9462633090}\label{extractor_8cpp_af6b57b3881e27510cd3f1b9462633090}} 
+\index{extractor.cpp@{extractor.cpp}!configureGlove@{configureGlove}}
+\index{configureGlove@{configureGlove}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{configureGlove()}{configureGlove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2_d_tdata_glove_2include_2fglove_8h_abb452686968e48b67397da5f97445f5b}{bool}} configure\+Glove (\begin{DoxyParamCaption}\item[{char $\ast$}]{port }\end{DoxyParamCaption})}
+
+configure\+Glove function
+
+This function simply opens the glove and prints out the number of gestures that the glove can infer from the sensors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & char pointer to the port(usb).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape boolean} used to check if successful or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extractor_8cpp_a940a23a199d2f68244268cfb4305e2c7}\label{extractor_8cpp_a940a23a199d2f68244268cfb4305e2c7}} 
+\index{extractor.cpp@{extractor.cpp}!extractGloveData@{extractGloveData}}
+\index{extractGloveData@{extractGloveData}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{extractGloveData()}{extractGloveData()}}
+{\footnotesize\ttfamily void extract\+Glove\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+extract\+Glove\+Data function
+
+This function simply extract the glove data with a call to S\+DK function called fd\+Get\+Sensor\+Scaled\+All and calls the functions in charge of printing the values.
+
+\begin{DoxyReturn}{Returns}
+{\itshape void}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extractor_8cpp_ab1c4e99be670259110a5354d87c8d89b}\label{extractor_8cpp_ab1c4e99be670259110a5354d87c8d89b}} 
+\index{extractor.cpp@{extractor.cpp}!getGestures@{getGestures}}
+\index{getGestures@{getGestures}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{getGestures()}{getGestures()}}
+{\footnotesize\ttfamily void get\+Gestures (\begin{DoxyParamCaption}\item[{int}]{gesture }\end{DoxyParamCaption})}
+
+get\+Gesture function
+
+This function simply implements a switch case in order to display in a readable format the gesture inferred by the glove
+
+
+\begin{DoxyParams}{Parameters}
+{\em gesture} & Is an integer representing the gesture index. It\textquotesingle{}s returned by a call to the S\+DK function called {\itshape fd\+Get\+Gesture}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extractor_8cpp_af87e235de28b44af4a3cd66d5af0af12}\label{extractor_8cpp_af87e235de28b44af4a3cd66d5af0af12}} 
+\index{extractor.cpp@{extractor.cpp}!getGloveInfo@{getGloveInfo}}
+\index{getGloveInfo@{getGloveInfo}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{getGloveInfo()}{getGloveInfo()}}
+{\footnotesize\ttfamily void get\+Glove\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get\+Glove\+Info function
+
+This function simply prints some information about the glove connected. It uses two S\+DK functions in order to retrive the infos.
+
+called {\itshape fd\+Get\+Sensor\+Scaled\+All}.
+
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extractor_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{extractor_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{extractor.cpp@{extractor.cpp}!main@{main}}
+\index{main@{main}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+main function
+
+The main function simply set\textquotesingle{}s a yarp communication and then, in a loop, keeps to extract the data and sends it through a buffered port to the receiver, namely {\itshape \mbox{\hyperlink{extractor_8cpp}{extractor.\+cpp}}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & char pointer to the port(usb).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape integer} used to check if successful or not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{extractor_8cpp_a49cd79fd06f4f93a8df3e5bd8449a2f0}\label{extractor_8cpp_a49cd79fd06f4f93a8df3e5bd8449a2f0}} 
+\index{extractor.cpp@{extractor.cpp}!printFingersValue@{printFingersValue}}
+\index{printFingersValue@{printFingersValue}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{printFingersValue()}{printFingersValue()}}
+{\footnotesize\ttfamily void print\+Fingers\+Value (\begin{DoxyParamCaption}\item[{float $\ast$}]{glove\+A\+\_\+scaled }\end{DoxyParamCaption})}
+
+print\+Fingers\+Value function
+
+This function take as parameter the glove extracted finger\+\_\+values and prints them in a format representing the various fingers. The values are normalized between 0 and 1.
+
+
+\begin{DoxyParams}{Parameters}
+{\em glove\+A\+\_\+scaled} & Is a float pointer containing the normalized values. Is returned after an S\+DK call to the function called {\itshape fd\+Get\+Sensor\+Scaled\+All}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\itshape void} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{extractor_8cpp_afa93e0e16777315c68701a56fabef6db}\label{extractor_8cpp_afa93e0e16777315c68701a56fabef6db}} 
+\index{extractor.cpp@{extractor.cpp}!finger\_values@{finger\_values}}
+\index{finger\_values@{finger\_values}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{finger\_values}{finger\_values}}
+{\footnotesize\ttfamily float finger\+\_\+values\mbox{[}18\mbox{]}}
+
+array containing the actual data from the glove \mbox{\Hypertarget{extractor_8cpp_a4be851560df0d31709c314e821eaebec}\label{extractor_8cpp_a4be851560df0d31709c314e821eaebec}} 
+\index{extractor.cpp@{extractor.cpp}!loop\_delay@{loop\_delay}}
+\index{loop\_delay@{loop\_delay}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{loop\_delay}{loop\_delay}}
+{\footnotesize\ttfamily constexpr double loop\+\_\+delay = 1.\+0\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+delay for controlling flow \mbox{\Hypertarget{extractor_8cpp_abf31fed954b31a37bc7206b4d170200e}\label{extractor_8cpp_abf31fed954b31a37bc7206b4d170200e}} 
+\index{extractor.cpp@{extractor.cpp}!pGloveA@{pGloveA}}
+\index{pGloveA@{pGloveA}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{pGloveA}{pGloveA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structfd_glove}{fd\+Glove}}$\ast$ p\+GloveA = N\+U\+LL}
+
+initialization of an \mbox{\hyperlink{structfd_glove}{fd\+Glove}} pointer pointing to the glove \mbox{\Hypertarget{extractor_8cpp_a1e48ede00e20997730ab8956413cbeb9}\label{extractor_8cpp_a1e48ede00e20997730ab8956413cbeb9}} 
+\index{extractor.cpp@{extractor.cpp}!top@{top}}
+\index{top@{top}!extractor.cpp@{extractor.cpp}}
+\doxysubsubsection{\texorpdfstring{top}{top}}
+{\footnotesize\ttfamily constexpr size\+\_\+t top = 100\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+size for a loop 
